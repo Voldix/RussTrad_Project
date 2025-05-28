@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Avenir Next Cyr Regular';
+    src: url('/fonts/AvenirNextCyr-Regular.eot');
+    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/AvenirNextCyr-Regular.woff') format('woff'),
+        url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Bold';
+    src: url('/fonts/bold/AvenirNextCyr-Bold.eot');
+    src: url('/fonts/bold/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/bold/AvenirNextCyr-Bold.woff') format('woff'),
+        url('/fonts/bold/AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Demi';
+    src: url('/fonts/demi/AvenirNextCyr-Demi.eot');
+    src: url('/fonts/demi/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/demi/AvenirNextCyr-Demi.woff') format('woff'),
+        url('/fonts/demi/AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Medium';
+    src: url('/fonts/medium/AvenirNextCyr-Medium.eot');
+    src: url('/fonts/medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/medium/AvenirNextCyr-Medium.woff') format('woff'),
+        url('/fonts/medium/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.al-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Avenir Next Cyr Regular';
+    color: #1A0F0F;
+}
+
+h2 {
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: 0;
+}
+
+.al-section {
+    padding: 65px 0;
+}
+
+.al-container {
+    max-width: 1060px;
+    margin: 0 auto;
+
+}
+
+
+.al-tl-item {
+    display: flex;
+}
+
+.al-tl-text {
+    max-width: 692px;
+    font-family: 'Avenir Next Cyr Regular';
+    margin-bottom: 44px;
+}
+
+.al-tl-num {
+    width: 49px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.al-tl-num::after {
+    content: '';
+    width: 3px;
+    background-color: #BE1622;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+
+.al-tl-content {
+    flex-grow: 1;
+    padding-bottom: 38px;
+    margin-left: 41px;
+}
+
+
+.al-tl-title {
+    font-size: 24px;
+    line-height: 120%;
+    padding: 10px 0;
+    font-family: 'Avenir Next Cyr Bold';
+}
+
+.al-tl-num span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 24px;
+    line-height: 120%;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #BE1622;
+    position: relative;
+    z-index: 2;
+}
+
+/* Форма */
+.al-form {
+    display: flex;
+    flex-direction: column;
+    width: ;
+}
+
+.al-form-title{
+    margin-bottom: 29px;
+}
+
+.al-form-menu {
+    display: flex;
+    /* gap: 91px; */
+}
+
+.al-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    height: 595px;
+    background-image: url(../img/menu.png);
+    border-radius: 10px;
+}
+
+input,
+select {
+    background-color: #F5F5F5;
+    color: #00000066;
+    width: 449px;
+    height: 48px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0;
+    border-radius: 10px;
+    border: none;
+
+    /* top: 287px; */
+}
+
+.al-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.al-form-btn {
+    width: 449px;
+    height: 53px;
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 19px;
+    background-color: #BE1622;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 29px;
+}
+
+.al-red{
+    color: #BE1622;
+}
+
+.al-text-agree{
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+.al-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 336px;
+    height: 336px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #BE1622;
+  
+}
