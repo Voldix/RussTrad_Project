@@ -38,10 +38,26 @@
     font-style: normal;
 }
 
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+input, select, button{
+    outline: none;
+}
+
 .al-column {
     display: flex;
     flex-direction: column;
 }
+
+
 
 body {
     font-family: 'Avenir Next Cyr Regular';
@@ -62,10 +78,11 @@ h2 {
 
 .container-small {
     max-width: 1060px;
-    
+
     margin: 0 auto;
 
 }
+
 
 
 .al-tl-item {
@@ -96,7 +113,12 @@ h2 {
     display: block;
     z-index: 1;
 }
-
+ /* .al-tl-item:last-child .al-tl-num::after {
+     display: none;
+ } */
+.al-tl-item:last-child .al-tl-num::after {
+    display: none;
+}
 
 .al-tl-content {
     flex-grow: 1;
