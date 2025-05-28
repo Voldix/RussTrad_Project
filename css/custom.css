@@ -61,9 +61,7 @@ h2 {
 }
 
 .container-small {
-    max-width: 1090px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1060px;
     margin: 0 auto;
 
 }
