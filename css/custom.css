@@ -60,7 +60,7 @@ h2 {
     padding: 65px 0;
 }
 
-.al-container {
+.container-small {
     max-width: 1060px;
     margin: 0 auto;
 
@@ -134,7 +134,7 @@ h2 {
     width: ;
 }
 
-.al-form-title{
+.al-form-title {
     margin-bottom: 29px;
 }
 
@@ -187,17 +187,17 @@ select {
     margin-bottom: 29px;
 }
 
-.al-red{
+.al-red {
     color: #BE1622;
 }
 
-.al-text-agree{
+.al-text-agree {
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0;
 }
 
-.al-circle{
+.al-circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,5 +207,5 @@ select {
     border-radius: 50%;
     background-color: #FFFFFF;
     color: #BE1622;
-  
+
 }
