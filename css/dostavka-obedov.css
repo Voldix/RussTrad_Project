@@ -1,18 +1,50 @@
 @import url(./default.css);
 
+/* Шрифты */
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/cusotm-avenir/AvenirNextCyr-Demi.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/cusotm-avenir/AvenirNextCyr-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/cusotm-avenir/AvenirNextCyr-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/cusotm-avenir/AvenirNextCyr-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Контейнер */
 .vl-container {
-    max-width: 1060px;
     margin: 0 auto;
     padding: 0 20px;
+    max-width: 1060px;
 }
 
 /* Всё тело */
 .vl-main {
-    font-family: 'Avenir Next Cyr Regular';
+    font-family: 'Avenir Next Cyr', sans-serif;
     font-weight: 400;
     color: #1a0f0f;
-
 }
 
 /* Секция Промо */
@@ -25,14 +57,12 @@
 .vl-promo__wrapper {
     display: flex;
     column-gap: 42px;
+    max-height: 464px;
 }
 
-.vl-promo__left {
-
-}
-
-.vl-promo__title {
-    /* font-family: 'Avenir Next Cyr Demi'; */
+h1.vl-promo__title {
+    font-family: 'Avenir Next Cyr', sans-serif;
+    letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 25px;
     font-weight: 600;
@@ -49,10 +79,6 @@
     max-width: 481px;
 }
 
-.vl-promo__btn {
-
-}
-
 .vl-btn {
     padding: 0 29px;
     display: inline-flex;
@@ -61,8 +87,7 @@
     white-space: nowrap;
     cursor: pointer;
 
-    font-family: 'Avenir Next Cyr Demi';
-    font-weight: 750;
+    font-weight: 700;
     font-size: 19px;
     line-height: 1;
     color: #fff;
@@ -104,19 +129,14 @@
     row-gap: 20px;
 }
 
-.vl-achievements__icon {
-
-}
-
 .vl-achievements__text {
-    font-family: 'Avenir Next Cyr Demi';
     margin: 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.3;
 }
 
-/* Секция ""Доставка обедов в офис и на предприятие" */
+/* Секция "Доставка обедов в офис и на предприятие" */
 .vl-delivery {
     padding: 130px 0 126px;
 }
@@ -127,9 +147,10 @@
     row-gap: 35px;
 }
 
-.vl-delivery__top-title {
+h2.vl-delivery__top-title {
+    font-family: 'Avenir Next Cyr', sans-serif;
     margin-top: 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 42px;
     line-height: 1;
     max-width: 992px;
@@ -154,9 +175,10 @@
     row-gap: 35px;
 }
 
-.vl-delivery__middle-subtitle {
+h3.vl-delivery__middle-subtitle {
+    font-family: 'Avenir Next Cyr', sans-serif;
     margin: 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 1.2;
     color: #be1622;
@@ -173,7 +195,8 @@
     max-width: 520px;
 }
 
-.vl-delivery__middle-suggestion {
+h4.vl-delivery__middle-suggestion {
+    font-family: 'Avenir Next Cyr', sans-serif;
     margin: 0;
     margin-bottom: 10px;
     font-weight: 500;
@@ -203,18 +226,219 @@
     line-height: 1.3;
 }
 
-.vl-delivery__bottom-left span {
-    font-family: 'Avenir Next Cyr Demi';
-    font-weight: 750;
+.vl-delivery__bottom-left p {
+    margin: 0 ;
 }
 
-.vl-delivery__bottom-right {
-    
+.vl-delivery__bottom-left span {
+    font-weight: 700;
 }
 
 .vl-delivery__bottom-btn {
     background-color: #fff;
     color: #be1622;
 }
+
+/* Секция Меню */
+.vl-menu {
+    padding-bottom: 130px;
+}
+
+.vl-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 51px;
+}
+
+.vl-menu__top {
+    display: flex;
+    column-gap: 122px;
+}
+
+.vl-menu__top h2 {
+    margin: 0;
+    font-family: 'Avenir Next Cyr', sans-serif;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.vl-menu p {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.vl-menu__choice {
+    display: flex;
+    column-gap: 20px;
+    max-height: 344px;
+}
+
+.vl-menu__lunch {
+    position: relative;
+}
+
+.vl-menu__lunch img {
+    border-radius: 10px;
+}
+
+.vl-menu__lunch .vl-menu-btn {
+    position: absolute;
+    left: 50%;
+    /* bottom: 5.5%; */
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.vl-menu-btn {
+    margin-bottom: 20px;
+    column-gap: 11.5px;
+    width: 280px;
+}
+
+.vl-shadow {
+    filter: brightness(60%);
+} 
+
+.vl-menu__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+}
+
+.vl-menu__list {
+    display: flex;
+    column-gap: 12px;
+}
+
+.vl-menu__weekday {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.vl-menu__weekday p {
+    margin: 0;
+}
+
+.vl-menu__dayname {
+    padding-bottom: 16px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    color: #be1622;
+
+    border-bottom: 1px solid #be1622;
+}
+
+.vl-menu__dishtype {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.vl-menu__salads {
+    height: 238px;
+}
+
+.vl-menu__soups,
+.vl-menu__hot {
+    height: 290px;
+}
+
+.vl-menu__side {
+    height: 160px;
+}
+
+
+.vl-menu__dishtype .vl-menu__dishtype-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.vl-menu__name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.vl-menu__list-btn {
+    padding: 0 40px;
+}
+
+/* Секция "Правила доставки" */
+.vl-rules {
+    padding: 70px 0;
+    background-image: url(../img/vl-rules/rules-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vl-rules__wrapper {
+    color: #fff;
+}
+
+.vl-rules__wrapper p {
+    margin: 0;
+}
+
+.vl-rules__title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-family: 'Avenir Next Cyr', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1;
+    color: #fff;
+}
+
+.vl-rules__list {
+    margin-bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.vl-rules__content {
+    max-width: 520px;
+    display: flex;
+    column-gap: 20px;
+
+    flex-grow: 1;
+}
+
+.vl-rules__number {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.vl-rules__text {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.vl-rules__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vl-rules__btn {
+    padding: 0 44.5px;
+}
+
 
 
