@@ -35,6 +35,14 @@
     font-display: swap;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Avenir Next Cyr", sans-serif;
+}
+
 /* Контейнер */
 .vl-container {
     margin: 0 auto;
@@ -63,7 +71,7 @@
 }
 
 h1.vl-promo__title {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 25px;
@@ -150,7 +158,7 @@ h1.vl-promo__title {
 }
 
 h2.vl-delivery__top-title {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin-top: 0;
     font-weight: 600;
     font-size: 42px;
@@ -178,7 +186,7 @@ h2.vl-delivery__top-title {
 }
 
 h3.vl-delivery__middle-subtitle {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin: 0;
     font-weight: 600;
     font-size: 24px;
@@ -198,7 +206,7 @@ h3.vl-delivery__middle-subtitle {
 }
 
 h4.vl-delivery__middle-suggestion {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin: 0;
     margin-bottom: 10px;
     font-weight: 500;
@@ -259,7 +267,7 @@ h4.vl-delivery__middle-suggestion {
 
 .vl-menu__top h2 {
     margin: 0;
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     flex-shrink: 0;
     font-weight: 600;
     font-size: 42px;
@@ -395,7 +403,7 @@ h4.vl-delivery__middle-suggestion {
 .vl-rules__title {
     margin: 0;
     margin-bottom: 63px;
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     font-weight: 600;
     font-size: 42px;
     line-height: 1;
@@ -456,7 +464,7 @@ h4.vl-delivery__middle-suggestion {
 }
 
 .vl-timetable__title {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     font-weight: 600;
     font-size: 42px;
     line-height: 1;
@@ -498,8 +506,11 @@ h4.vl-delivery__middle-suggestion {
 }
 
 /* Секция "Этапы работы" */
+.vl-workstages {
+    padding-bottom: 92px;
+}
 .al-section h2 {
-    font-family: "Avenir Next Cyr", sans-serif;
+    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin-top: 0;
     font-weight: 600;
     font-size: 42px;
@@ -575,4 +586,91 @@ h4.vl-delivery__middle-suggestion {
     background-color: #be1622;
     position: relative;
     z-index: 2;
+}
+
+/* Секция "Нам доверяют" */
+.vl-trust {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.vl-trust p,
+.vl-trust h2 {
+    margin: 0;
+}
+
+h2.vl-trust__title {
+    margin-bottom: 40px;
+}
+
+.vl-trust__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.vl-trust__content {
+    display: flex;
+    column-gap: 20px;
+}
+
+.vl-trust__card {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 17px;
+    padding-bottom: 27px;
+
+    border-radius: 10px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.vl-trust__card-top {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.vl-trust__card-img {
+    border-radius: 10px;
+    border: 1px solid #f8eee1;
+}
+
+.vl-trust__card-title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.vl-trust__card-position {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.vl-trust__card-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.vl-trust__card-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+.vl-trust__card-text {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.vl-trust__card-bottom {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    color: #be1622;
 }
