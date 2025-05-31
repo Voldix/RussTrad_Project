@@ -39,8 +39,13 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: "Avenir Next Cyr", sans-serif;
+}
+
+.desktop-hidden {
+    display: none;
 }
 
 /* Контейнер */
@@ -66,12 +71,12 @@ h5 {
 
 .vl-promo__wrapper {
     display: flex;
-    column-gap: 42px;
+    justify-content: space-between;
+    /* align-items: center; */
     max-height: 464px;
 }
 
-h1.vl-promo__title {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
+.vl-promo__title {
     letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 25px;
@@ -110,7 +115,8 @@ h1.vl-promo__title {
 
 .vl-promo__right,
 .vl-promo__right img {
-    flex-shrink: 0;
+    width: 402px;
+    height: 464px;
     border-radius: 14px;
 }
 
@@ -158,7 +164,6 @@ h1.vl-promo__title {
 }
 
 h2.vl-delivery__top-title {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin-top: 0;
     font-weight: 600;
     font-size: 42px;
@@ -186,7 +191,6 @@ h2.vl-delivery__top-title {
 }
 
 h3.vl-delivery__middle-subtitle {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin: 0;
     font-weight: 600;
     font-size: 24px;
@@ -206,7 +210,6 @@ h3.vl-delivery__middle-subtitle {
 }
 
 h4.vl-delivery__middle-suggestion {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin: 0;
     margin-bottom: 10px;
     font-weight: 500;
@@ -267,7 +270,6 @@ h4.vl-delivery__middle-suggestion {
 
 .vl-menu__top h2 {
     margin: 0;
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     flex-shrink: 0;
     font-weight: 600;
     font-size: 42px;
@@ -403,7 +405,6 @@ h4.vl-delivery__middle-suggestion {
 .vl-rules__title {
     margin: 0;
     margin-bottom: 63px;
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     font-weight: 600;
     font-size: 42px;
     line-height: 1;
@@ -464,7 +465,6 @@ h4.vl-delivery__middle-suggestion {
 }
 
 .vl-timetable__title {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     font-weight: 600;
     font-size: 42px;
     line-height: 1;
@@ -509,8 +509,8 @@ h4.vl-delivery__middle-suggestion {
 .vl-workstages {
     padding-bottom: 92px;
 }
+
 .al-section h2 {
-    /* font-family: "Avenir Next Cyr", sans-serif; */
     margin-top: 0;
     font-weight: 600;
     font-size: 42px;
@@ -673,4 +673,722 @@ h2.vl-trust__title {
     font-size: 19px;
     line-height: 1;
     color: #be1622;
+}
+
+/* Секция FAQ */
+.none {
+    margin-bottom: 0 !important;
+}
+
+.vl-faq {
+    padding-top: 130px;
+}
+
+.al-acc-wrapper {
+    display: flex;
+    column-gap: 132px;
+}
+
+.al-acc-content {
+    width: 100%;
+}
+
+.al-acc-text {
+    max-width: 770px;
+    margin-top: 0;
+    margin-bottom: 26px;
+
+    font-size: 20px;
+    line-height: 1.3;
+
+    max-height: 0;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+}
+
+.al-acc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f8eee1;
+    cursor: pointer;
+}
+
+.al-acc-item-wrapper {
+    display: flex;
+    max-width: 536px;
+}
+
+.al-acc-item-wrapper h3 {
+    margin: 26px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+h2.al-acc-title {
+    margin: 0;
+}
+
+h3.al-acc-first-title {
+    margin-top: 13px;
+}
+
+.al-acc-plus {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.al-acc-plus-img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.4s ease-in;
+}
+
+.vl-acc__bottom {
+    margin-top: 27px;
+    padding: 20px;
+    background-color: #f8eee1;
+    max-width: 741px;
+    border-radius: 10px;
+}
+.vl-acc__bottom-text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.vl-acc__bottom-text .vl-question {
+    color: #be1622;
+}
+
+/* Секция "Наши события" */
+.vl-events {
+    padding: 130px 0 102px;
+}
+
+.vl-events p,
+.vl-events h2,
+.vl-events h3 {
+    margin: 0;
+}
+
+h2.vl-events__title {
+    margin-bottom: 30px;
+}
+
+.vl-events__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.vl-events__content {
+    display: flex;
+    column-gap: 20px;
+}
+
+.vl-events__card {
+    padding: 20px;
+    background-color: #f8eee1;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 17px;
+}
+
+.vl-events__card-img {
+    border-radius: 10px;
+}
+
+.vl-events__card-title {
+    height: 58px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.vl-events__card-text {
+    font-size: 20px;
+    line-height: 1.3;
+    flex-grow: 1;
+}
+
+.vl-events__card-btn {
+    background-color: #fff;
+    color: #be1622;
+}
+
+/* Ceкция формы братной связи */
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+    /* Контейнер */
+    .vl-container {
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 280px;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .desktop-hidden {
+        display: block;
+    }
+
+    /* Секция Промо */
+    .vl-promo {
+        padding: 14px 0 45px;
+    }
+
+    .vl-promo__wrapper {
+        max-height: unset;
+    }
+
+    .vl-promo__left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .vl-promo__title {
+        margin-bottom: 0;
+        font-size: 34px;
+    }
+
+    .vl-promo__text {
+        margin-bottom: 0;
+        font-size: 12px;
+        max-width: unset;
+    }
+
+    .vl-promo__mob-img {
+        border-radius: 6px;
+    }
+
+    .vl-btn {
+        font-size: 18px;
+        height: 52px;
+        border-radius: 6px;
+    }
+
+    .vl-promo__right {
+        display: none;
+    }
+
+    /* Секция Достижения */
+    .vl-achievements {
+        padding: 20px 0;
+    }
+
+    .vl-achievements__wrapper {
+        row-gap: 20px;
+        text-align: start;
+    }
+
+    .vl-achievements__item {
+        width: 100%;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: flex-start;
+    }
+
+    .vl-achievements__item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .vl-achievements__text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    /* Секция "Доставка обедов в офис и на предприятие" */
+    .vl-delivery {
+        padding: 45px 0 60px;
+    }
+
+    .vl-delivery__wrapper {
+        row-gap: 20px;
+    }
+
+    h2.vl-delivery__top-title {
+        margin-bottom: 20px;
+        font-size: 28px;
+        max-width: unset;
+    }
+
+    .vl-delivery__top-text {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .vl-delivery__top-text p + p {
+        margin-top: 10px;
+    }
+
+    .vl-delivery__middle {
+        row-gap: 10px;
+    }
+
+    h3.vl-delivery__middle-subtitle {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .vl-delivery__middle-wrapper {
+        row-gap: 10px;
+    }
+
+    .vl-delivery__middle-content {
+        max-width: unset;
+    }
+
+    h4.vl-delivery__middle-suggestion {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .vl-delivery__middle-description {
+        font-size: 12px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .vl-delivery__bottom {
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 6px;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .vl-delivery__bottom-left {
+        font-size: 12px;
+    }
+
+    .vl-delivery__bottom-right {
+        width: 100%;
+    }
+
+    .vl-delivery__bottom-btn {
+        width: 100%;
+    }
+
+    /* Секция Меню */
+    br {
+        display: none;
+    }
+
+    .vl-shadow {
+        filter: brightness(50%);
+    }
+
+    .vl-menu {
+        padding-bottom: 60px;
+    }
+
+    .vl-menu__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .vl-menu__top {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .vl-menu__top h2 {
+        font-size: 28px;
+    }
+
+    .vl-menu p {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .vl-menu__choice {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-height: unset;
+    }
+
+    .vl-menu__lunch img {
+        border-radius: 6px;
+    }
+
+    .vl-menu__lunch .vl-menu-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .vl-menu-btn {
+        justify-content: space-between;
+        padding: 0 15px;
+        margin-bottom: 18px;
+        width: 244px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .vl-menu__list-wrapper {
+        margin-top: 10px;
+        row-gap: 20px;
+    }
+
+    .vl-menu__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .vl-menu__weekday {
+        flex: 0;
+        display: flex;
+        row-gap: 0;
+    }
+
+    p.vl-menu__dayname {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.3;
+        border-bottom: none;
+    }
+
+    .vl-menu__dishtype {
+        display: block;
+    }
+
+    .vl-menu__dishtype span {
+        font-weight: 700;
+    }
+
+    .vl-menu__dishtype p.desktop-hidden {
+        margin-bottom: 5px;
+    }
+
+    .vl-menu__salads,
+    .vl-menu__soups,
+    .vl-menu__hot,
+    .vl-menu__side {
+        height: unset;
+    }
+
+    .vl-menu__dishtype .vl-menu__dishtype-title {
+        font-size: 12px;
+    }
+
+    .vl-menu__name {
+        display: block;
+    }
+
+    .vl-menu__list-btn {
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    /* Секция "Правила доставки" */
+    .vl-rules {
+        padding: 30px 0;
+        background-image: url(../img/vl-rules/rules-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .vl-rules__wrapper {
+        color: #fff;
+    }
+
+    .vl-rules__wrapper p {
+        margin: 0;
+    }
+
+    .vl-rules__title {
+        width: 226px;
+        margin-bottom: 27px;
+        font-size: 28px;
+    }
+
+    .vl-rules__list {
+        margin-bottom: 50px;
+        row-gap: 10px;
+    }
+
+    .vl-rules__content {
+        max-width: unset;
+        column-gap: 13px;
+    }
+
+    .vl-rules__number {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .vl-rules__text {
+        font-size: 12px;
+    }
+
+    .vl-rules__btn {
+        width: 100%;
+    }
+
+    /* Секция "Расписание доставки" */
+    .vl-timetable {
+        padding: 60px 0;
+    }
+
+    .vl-timetable__wrapper h2 {
+        margin-bottom: 20px;
+    }
+
+    .vl-timetable__title {
+        font-size: 28px;
+    }
+
+    .vl-timetable__content {
+        gap: 10px;
+    }
+
+    .vl-timetable__weekday {
+        padding: 18px;
+        border-radius: 6px;
+
+        display: flex;
+        column-gap: 0;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .vl-timetable__weekday {
+        width: 100%;
+        padding: 18px;
+        border-radius: 6px;
+        column-gap: 0;
+    }
+
+    .vl-timetable__day {
+        font-size: 18px;
+    }
+
+    .vl-timetable__time {
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        column-gap: 2.5px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    /* Секция "Этапы работы" */
+    .vl-workstages {
+        padding-bottom: 28px;
+    }
+
+    .al-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .al-tl {
+        padding-left: 0;
+    }
+
+    .al-tl-item {
+        display: flex;
+    }
+
+    .al-tl-text {
+        max-width: unset;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .al-tl-content {
+        padding-bottom: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .al-tl-title {
+        max-width: 168px;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .al-tl-desc {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    /* Секция "Нам доверяют" */
+    .vl-trust {
+        padding: 30px 0;
+    }
+
+    h2.vl-trust__title {
+        margin-bottom: 30px;
+    }
+
+    .vl-trust__title {
+        font-size: 28px;
+    }
+
+    .vl-trust__content {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .vl-trust__card {
+        padding: 22px 10px;
+        border-radius: 6;
+        row-gap: 10px;
+    }
+
+    .vl-trust__card-img {
+        border-radius: 6px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .vl-trust__card-title {
+        row-gap: 9px;
+    }
+
+    .vl-trust__card-position {
+        font-size: 10px;
+    }
+
+    .vl-trust__card-name {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .vl-trust__card-content {
+        row-gap: 20px;
+    }
+
+    .vl-trust__card-text {
+        font-size: 12px;
+    }
+
+    .vl-trust__card-bottom {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Секция FAQ */
+    .vl-faq {
+        padding-top: 60px;
+    }
+
+    .al-acc-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .al-acc-text {
+        max-width: 238px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .al-acc-item {
+        border-bottom: 2px solid #f8eee1;
+    }
+
+    .al-acc-item-wrapper {
+        max-width: unset;
+    }
+
+    .al-acc-item-wrapper h3 {
+        margin: 10px 0 12px;
+        font-size: 18px;
+    }
+
+    h3.al-acc-first-title {
+        margin-top: 0;
+    }
+
+    .al-acc-plus,
+    .al-acc-plus-img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .vl-acc__bottom {
+        padding: 20px 15px;
+        margin-top: 20px;
+        max-width: unset;
+        border-radius: 6px;
+    }
+    .vl-acc__bottom-text {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    /* Секция "Наши события" */
+    .vl-events {
+        padding: 60px;
+    }
+
+    h2.vl-events__title {
+        margin-bottom: 15px;
+    }
+
+    .vl-events__title {
+        font-size: 28px;
+    }
+
+    .vl-events__content {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .vl-events__card {
+        padding: 10px;
+        border-radius: 6px;
+
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+    .vl-events__card-img {
+        border-radius: 6px;
+    }
+
+    .vl-events__card-title {
+        height: unset;
+        font-size: 18px;
+    }
+
+    .vl-events__card-text {
+        font-size: 12px;
+        flex-grow: 0;
+    }
+
+    .vl-events__card-btn {
+        padding: 0 18px;
+        background-color: #fff;
+        color: #be1622;
+    }
 }
