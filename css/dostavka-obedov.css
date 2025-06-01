@@ -52,7 +52,7 @@ h6 {
 .vl-container {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1060px;
+    width: min(1100px, 100%);
 }
 
 /* Всё тело */
@@ -60,20 +60,29 @@ h6 {
     font-family: "Avenir Next Cyr", sans-serif;
     font-weight: 400;
     color: #1a0f0f;
+    box-sizing: border-box;
+}
+
+.vl-main *,
+.vl-main *::before,
+.vl-main *::after {
+    box-sizing: border-box;
 }
 
 /* Секция Промо */
 .vl-promo {
     padding: 33px 0 70px;
-    display: flex;
-    flex-direction: row;
 }
 
 .vl-promo__wrapper {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    max-height: 464px;
+}
+
+.vl-promo__left {
+    display: inline-flex;
+    flex-direction: column;
+    width: 616px;
 }
 
 .vl-promo__title {
@@ -87,11 +96,15 @@ h6 {
 
 .vl-promo__text {
     margin-top: 0;
-    margin-bottom: 106px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.3;
     max-width: 481px;
+}
+
+.vl-promo__btn {
+    margin-top: auto;
+    width: fit-content;
 }
 
 .vl-btn {
@@ -277,7 +290,8 @@ h4.vl-delivery__middle-suggestion {
 }
 
 .vl-menu p {
-    margin-top: 16px;
+    /* margin-top: 16px; */
+    margin: 0;
     margin-bottom: 0;
     font-size: 20px;
     line-height: 1.3;
@@ -825,13 +839,455 @@ h2.vl-events__title {
 
 /* Ceкция формы братной связи */
 
+/* Резиновая верстка до моб версии */
+@media (max-width: 1199px) {
+    /* Секция Промо */
+    .vl-promo {
+        padding: calc(33 / 12 * 1vw) 0 calc(70 / 12 * 1vw);
+    }
+
+    .vl-promo__left {
+        width: calc(616 / 12 * 1vw);
+    }
+
+    .vl-promo__title {
+        margin-bottom: calc(25 / 12 * 1vw);
+        font-size: calc(50 / 12 * 1vw);
+    }
+
+    .vl-promo__text {
+        font-size: calc(20 / 12 * 1vw);
+        max-width: calc(481 / 12 * 1vw);
+    }
+
+    .vl-btn {
+        padding: 0 calc(29 / 12 * 1vw);
+        font-size: calc(19 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+        height: calc(53 / 12 * 1vw);
+    }
+
+    .vl-promo__right,
+    .vl-promo__right img {
+        width: calc(402 / 12 * 1vw);
+        height: calc(464 / 12 * 1vw);
+        border-radius: calc(14 / 12 * 1vw);
+    }
+
+    /* Секция Достижения */
+    .vl-achievements__wrapper {
+        column-gap: calc(20 / 12 * 1vw);
+        row-gap: calc(28 / 12 * 1vw);
+    }
+
+    .vl-achievements__text {
+        font-size: calc(20 / 12 * 1vw);
+        max-width: 250px;
+    }
+
+    /* Секция "Доставка обедов в офис и на предприятие" */
+    .vl-delivery {
+        padding: calc(130 / 12 * 1vw) 0 calc(126 / 12 * 1vw);
+    }
+
+    .vl-delivery__wrapper {
+        row-gap: calc(35 / 12 * 1vw);
+    }
+
+    h2.vl-delivery__top-title {
+        font-size: calc(42 / 12 * 1vw);
+        max-width: calc(992 / 12 * 1vw);
+    }
+
+    .vl-delivery__top-text {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-delivery__top-text p + p {
+        margin-top: calc(15 / 12 * 1vw);
+    }
+
+    .vl-delivery__middle {
+        row-gap: calc(35 / 12 * 1vw);
+    }
+
+    h3.vl-delivery__middle-subtitle {
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    .vl-delivery__middle-wrapper {
+        row-gap: calc(30 / 12 * 1vw);
+    }
+
+    h4.vl-delivery__middle-suggestion {
+        margin-bottom: calc(10 / 12 * 1vw);
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    h4.vl-delivery__middle-suggestion br {
+        display: none;
+    }
+
+    .vl-delivery__middle-description {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-delivery__bottom {
+        padding: calc(22 / 12 * 1vw) calc(36 / 12 * 1vw) calc(25 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+        column-gap: calc(70 / 12 * 1vw);
+    }
+
+    .vl-delivery__bottom-left {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    /* Секция Меню */
+    .vl-menu {
+        padding-bottom: calc(130 / 12 * 1vw);
+    }
+
+    .vl-menu__wrapper {
+        row-gap: calc(51 / 12 * 1vw);
+    }
+
+    .vl-menu__top {
+        column-gap: calc(122 / 12 * 1vw);
+    }
+
+    .vl-menu__top h2 {
+        font-size: calc(42 / 12 * 1vw);
+    }
+
+    .vl-menu p {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-menu__choice {
+        column-gap: calc(20 / 12 * 1vw);
+        justify-content: space-between;
+    }
+
+    .vl-menu__lunch .mobile-hidden {
+        width: calc(340 / 12 * 1vw);
+        height: calc(344 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+    }
+
+    .vl-menu-btn {
+        margin-bottom: calc(20 / 12 * 1vw);
+        column-gap: calc(11.5 / 12 * 1vw);
+        width: calc(280 / 12 * 1vw);
+    }
+
+    .vl-menu__list-wrapper {
+        row-gap: calc(60 / 12 * 1vw);
+    }
+
+    .vl-menu__list {
+        column-gap: calc(12 / 12 * 1vw);
+    }
+
+    .vl-menu__weekday {
+        row-gap: calc(30 / 12 * 1vw);
+    }
+
+    .vl-menu__dayname {
+        padding-bottom: calc(16px / 12 * 1vw);
+        font-size: calc(19 / 12 * 1vw);
+    }
+
+    .vl-menu__dishtype {
+        row-gap: calc(10 / 12 * 1vw);
+    }
+
+    .vl-menu__dishtype .vl-menu__dishtype-title {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-menu__name {
+        row-gap: calc(10 / 12 * 1vw);
+    }
+
+    .vl-menu__list-btn {
+        padding: 0 calc(40 / 12 * 1vw);
+    }
+
+    .vl-menu__salads {
+        height: calc(238 / 12 * 1vw);
+    }
+    
+    .vl-menu__soups,
+    .vl-menu__hot {
+        height: calc(290 / 12 * 1vw);
+    }
+    
+    .vl-menu__side {
+        height: calc(160 / 12 * 1vw);
+    }
+
+    /* Секция "Правила доставки" */
+    .vl-rules {
+        padding: calc(70 / 12 * 1vw) 0;
+    }
+
+    .vl-rules__title {
+        margin-bottom: calc(63 / 12 * 1vw);
+        font-size: calc(42 / 12 * 1vw);
+    }
+
+    .vl-rules__list {
+        margin-bottom: calc(47 / 12 * 1vw);
+        row-gap: calc(30 / 12 * 1vw);
+        column-gap: calc(20 / 12 * 1vw);
+    }
+
+    .vl-rules__content {
+        max-width: 520px;
+        column-gap: calc(20 / 12 * 1vw);
+    }
+
+    .vl-rules__number {
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    .vl-rules__text {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-rules__btn {
+        padding: 0 calc(44.5 / 12 * 1vw);
+    }
+
+    /* Секция "Расписание доставки" */
+    .vl-timetable {
+        padding: calc(130 / 12 * 1vw) 0;
+    }
+
+    .vl-timetable__wrapper h2 {
+        margin-bottom: calc(40 / 12 * 1vw);
+    }
+
+    .vl-timetable__title {
+        font-size: calc(42 / 12 * 1vw);
+    }
+    
+    .vl-timetable__content {
+        gap: calc(20 / 12 * 1vw);
+    }
+    
+    .vl-timetable__weekday {
+        padding: calc(26 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+        column-gap: calc(40 / 12 * 1vw);
+    }
+    
+    .vl-timetable__day {
+        font-size: calc(24 / 12 * 1vw);
+    }
+    
+    .vl-timetable__time {
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    /* Секция "Этапы работы" */
+    .vl-workstages {
+        padding-bottom: calc(92 / 12 * 1vw);
+    }
+
+    .al-section h2 {
+        font-size: calc(42 / 12 * 1vw);
+    }
+
+    .al-tl {
+        padding-left: calc(180 / 12 * 1vw);
+    }
+
+    .al-tl-text {
+        max-width: calc(692 / 12 * 1vw);
+        margin-bottom: calc(44 / 12 * 1vw);
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .al-tl-num {
+        width: calc(49 / 12 * 1vw);
+    }
+
+    .al-tl-num::after {
+        width: calc(3 / 12 * 1vw);
+    }
+
+    .al-tl-content {
+        padding-bottom: calc(38 / 12 * 1vw);
+        margin-left: calc(41 / 12 * 1vw);
+    }
+
+    .al-tl-title {
+        font-size: calc(24 / 12 * 1vw);
+        padding: calc(10 / 12 * 1vw) 0;
+    }
+
+    .al-tl-desc {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .al-tl-num span {
+        width: calc(49 / 12 * 1vw);
+        height: calc(49 / 12 * 1vw);
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    /* Секция "Нам доверяют" */
+    .vl-trust {
+        padding: calc(50 / 12 * 1vw) 0;
+    }
+
+    h2.vl-trust__title {
+        margin-bottom: calc(40 / 12 * 1vw);
+    }
+
+    .vl-trust__title {
+        font-size: calc(42 / 12 * 1vw);
+    }
+
+    .vl-trust__content {
+        column-gap: calc(20 / 12 * 1vw);
+    }
+
+    .vl-trust__card {
+        padding-top: calc(17 / 12 * 1vw);
+        padding-left: calc(20 / 12 * 1vw);
+        padding-right: calc(17 / 12 * 1vw);
+        padding-bottom: calc(27 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+        row-gap: calc(22 / 12 * 1vw);
+    }
+
+    .vl-trust__card-top {
+        column-gap: calc(20 / 12 * 1vw);
+    }
+
+    .vl-trust__card-img {
+        border-radius: calc(10 / 12 * 1vw);
+    }
+
+    .vl-trust__card-position {
+        font-size: calc(14 / 12 * 1vw);
+    }
+
+    .vl-trust__card-name {
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    .vl-trust__card-content {
+        row-gap: calc(36 / 12 * 1vw);
+    }
+
+    .vl-trust__card-text {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .vl-trust__card-bottom {
+        font-size: calc(19 / 12 * 1vw);
+    }
+
+    /* Секция FAQ */
+    .vl-faq {
+        padding-top: calc(130 / 12 * 1vw);
+    }
+
+    .al-acc-wrapper {
+        column-gap: calc(132 / 12 * 1vw);
+    }
+
+    .al-acc-text {
+        max-width: calc(770 / 12 * 1vw);
+        margin-bottom: calc(26 / 12 * 1vw);
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .al-acc-item-wrapper {
+        max-width: calc(536 / 12 * 1vw);
+    }
+
+    .al-acc-item-wrapper h3 {
+        margin: calc(26 / 12 * 1vw) 0;
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    h3.al-acc-first-title {
+        margin-top: calc(13 / 12 * 1vw);
+    }
+
+    .al-acc-plus {
+        width: calc(40 / 12 * 1vw);
+        height: calc(40 / 12 * 1vw);
+    }
+
+    .al-acc-plus-img {
+        width: calc(40 / 12 * 1vw);
+        height: calc(40 / 12 * 1vw);
+    }
+
+    .vl-acc__bottom {
+        margin-top: calc(27 / 12 * 1vw);
+        padding: calc(20 / 12 * 1vw);
+        max-width: calc(741 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+    }
+    .vl-acc__bottom-text {
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    /* Секция "Наши события" */
+    .vl-events {
+        padding: calc(130 / 12 * 1vw) 0 calc(102 / 12 * 1vw);
+    }
+
+    h2.vl-events__title {
+        margin-bottom: calc(30 / 12 * 1vw);
+    }
+
+    .vl-events__title {
+        font-size: calc(42 / 12 * 1vw);
+    }
+
+    .vl-events__content {
+        column-gap: calc(20 / 12 * 1vw);
+    }
+
+    .vl-events__card {
+        padding: calc(20 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+        row-gap: calc(17 / 12 * 1vw);
+    }
+
+    .vl-events__card-img {
+        border-radius: calc(10 / 12 * 1vw);
+    }
+
+    .vl-events__card-title {
+        height: calc(58 / 12 * 1vw);
+        font-size: calc(24 / 12 * 1vw);
+    }
+
+    .vl-events__card-text {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    img.mobile-hidden {
+        width: calc(300 / 12 * 1vw);
+        height: calc(291 / 12 * 1vw);
+    }
+}
+
 /* Мобильная версия */
 @media (max-width: 767px) {
     /* Контейнер */
     .vl-container {
         margin: 0 auto;
         padding: 0 20px;
-        max-width: 280px;
+        width: min(320px, 100%)
     }
 
     .mobile-hidden {
@@ -852,6 +1308,7 @@ h2.vl-events__title {
     }
 
     .vl-promo__left {
+        width: 100%;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
@@ -873,9 +1330,11 @@ h2.vl-events__title {
     }
 
     .vl-btn {
+        padding: 0 29px;
         font-size: 18px;
         height: 52px;
         border-radius: 6px;
+        width: 100%;
     }
 
     .vl-promo__right {
@@ -905,6 +1364,7 @@ h2.vl-events__title {
     }
 
     .vl-achievements__text {
+        max-width: unset;
         font-size: 16px;
         line-height: 1.2;
     }
@@ -1220,6 +1680,14 @@ h2.vl-events__title {
         font-size: 12px;
     }
 
+    .al-tl-num {
+        width: 49px;
+    }
+    
+    .al-tl-num::after {
+        width: 3px;
+    }
+
     .al-tl-content {
         padding-bottom: 20px;
         margin-left: 20px;
@@ -1237,6 +1705,12 @@ h2.vl-events__title {
     .al-tl-desc {
         font-size: 12px;
         line-height: 1.3;
+    }
+
+    .al-tl-num span {
+        width: 49px;
+        height: 49px;
+        font-size: 24px;
     }
 
     /* Секция "Нам доверяют" */
@@ -1348,7 +1822,7 @@ h2.vl-events__title {
 
     /* Секция "Наши события" */
     .vl-events {
-        padding: 60px;
+        padding: 60px 0;
     }
 
     h2.vl-events__title {
