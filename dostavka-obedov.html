@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dostavka-obedov</title>
+    <!-- Plugin Owl.Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="./css/dostavka-obedov.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./img/faviacon/favicon.png">
 </head>
 
 <body>
@@ -21,7 +26,8 @@
                             разнообразные
                             домашние обеды и ужины с быстрой
                             доставкой по всему Санкт-Петербургу и Ленинградской области.</p>
-                        <img class="vl-promo__mob-img desktop-hidden" src="./img/vl-promo/mob-promo-img.png" srcset="./img/vl-promo/mob-promo-img@2x.png 2x" alt="promo-img">
+                        <img class="vl-promo__mob-img desktop-hidden" src="./img/vl-promo/mob-promo-img.png"
+                            srcset="./img/vl-promo/mob-promo-img@2x.png 2x" alt="promo-img">
                         <button class="vl-promo__btn vl-btn">ОСТАВИТЬ ЗАЯВКУ</button>
                     </div>
                     <div class="vl-promo__right">
@@ -110,27 +116,34 @@
                                     разрабатывают профессиональные технологи.</p>
                             </div>
                             <div class="vl-delivery__middle-content">
-                                <h4 class="vl-delivery__middle-suggestion mobile-hidden">Своевременная доставка специализированным
+                                <h4 class="vl-delivery__middle-suggestion mobile-hidden">Своевременная доставка
+                                    специализированным
                                     автотранспортом.</h4>
-                                <h4 class="vl-delivery__middle-suggestion desktop-hidden">Своевременная доставка собственным автопарком.</h4>
-                                <p class="vl-delivery__middle-description mobile-hidden">Обеды доставляются специализированным
+                                <h4 class="vl-delivery__middle-suggestion desktop-hidden">Своевременная доставка
+                                    собственным автопарком.</h4>
+                                <p class="vl-delivery__middle-description mobile-hidden">Обеды доставляются
+                                    специализированным
                                     автотранспортом с соблюдением требований системы ХАССП и норм СанПиН: продукция
                                     транспортируется в плотно закрытой индивидуальной упаковке либо герметичных
                                     термобоксах, поддерживая безопасный диапазон температуры +2...+6 °C для сохранения
                                     свежести и качества готовых блюд.</p>
-                                <p class="vl-delivery__middle-description desktop-hidden">Осуществляем поставки с соблюдением температурного режима — обеды приезжают горячими и в срок.</p>
+                                <p class="vl-delivery__middle-description desktop-hidden">Осуществляем поставки с
+                                    соблюдением температурного режима — обеды приезжают горячими и в срок.</p>
                             </div>
                             <div class="vl-delivery__middle-content">
                                 <h4 class="vl-delivery__middle-suggestion">Гибкие условия<br> сотрудничества.</h4>
-                                <p class="vl-delivery__middle-description mobile-hidden">Мы ценим каждого клиента и готовы предложить
+                                <p class="vl-delivery__middle-description mobile-hidden">Мы ценим каждого клиента и
+                                    готовы предложить
                                     комфортные условия сотрудничества. Если численность коллектива превышает 35 человек,
                                     обсудим дополнительные выгодные условия. Организуем регулярные поставки точно по
                                     расписанию и предложим удобные способы расчета.</p>
-                                <p class="vl-delivery__middle-description desktop-hidden">Используем только свежие продукты, все этапы контролируются внутренней службой качества.</p>
+                                <p class="vl-delivery__middle-description desktop-hidden">Используем только свежие
+                                    продукты, все этапы контролируются внутренней службой качества.</p>
                             </div>
                             <div class="vl-delivery__middle-content desktop-hidden">
                                 <h4 class="vl-delivery__middle-suggestion">Персонализированный подход.</h4>
-                                <p class="vl-delivery__middle-description">Учтем пищевые предпочтения, возможные аллергии, составим меню под нужды коллектива.</p>
+                                <p class="vl-delivery__middle-description">Учтем пищевые предпочтения, возможные
+                                    аллергии, составим меню под нужды коллектива.</p>
                             </div>
                         </div>
                     </div>
@@ -160,269 +173,1574 @@
                     </div>
                     <div class="vl-menu__choice">
                         <div class="vl-menu__lunch">
-                            <img class="mobile-hidden" src="./img/vl-menu/hearty-lunch.png" srcset="./img/vl-menu/hearty-lunch@2x.png 2x"
-                                alt="hearty-lunch" width="340" height="344">
-                            <img class="desktop-hidden" src="./img/vl-menu/mob-hearty-lunch.png" srcset="./img/vl-menu/mob-hearty-lunch@2x.png 2x"
-                                alt="hearty-lunch" width="280" height="180">
-                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn">Сытный обед<img
-                                    src="./img/vl-menu/arrow-up.svg" alt="arrow up"></button>
+                            <img class="mobile-hidden" src="./img/vl-menu/hearty-lunch.png"
+                                srcset="./img/vl-menu/hearty-lunch@2x.png 2x" alt="hearty-lunch" width="340"
+                                height="344" data-img="1">
+                            <img class="desktop-hidden" src="./img/vl-menu/mob-hearty-lunch.png"
+                                srcset="./img/vl-menu/mob-hearty-lunch@2x.png 2x" alt="hearty-lunch" width="280"
+                                height="180" data-img="1">
+                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn btn-active" data-role="1"
+                                type="button">Сытный обед<img class="menu-btn-arrow" src="./img/vl-menu/arrow-down.svg"
+                                    alt="arrow"></button>
                         </div>
-                        <div class="vl-menu__lunch">
+                        <div class="vl-menu__mob-content desktop-none">
+                            <div class="vl-menu__list-wrapper vl-active mobile-hidden" data-content="1">
+                                <div class="vl-menu__list">
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Понедельник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Оливье (100 г), салат
+                                                Витаминный (100 г), свекла
+                                                печеная с грецким орехом (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Оливье<br>(100 г)</p>
+                                                <p class="mobile-hidden">Салат Витаминный (100 г)</p>
+                                                <p class="mobile-hidden">Свекла печеная<br>с грецким орехом (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с клецками (250
+                                                г), суп грибной с курицей
+                                                (250 г), суп харчо (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с клецками (250 г)</p>
+                                                <p class="mobile-hidden">Суп грибной<br>с курицей (250 г)</p>
+                                                <p class="mobile-hidden">Суп харчо (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> котлета куриная (100 г),
+                                                плов из свинины (200 г), стейк
+                                                из говяжьей печени с луком (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Котлета куриная (100 г)</p>
+                                                <p class="mobile-hidden">Плов из свинины (200 г)</p>
+                                                <p class="mobile-hidden">Стейк из говяжьей печени с луком<br>(100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Вторник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> капуста по-грузински (100 г),
+                                                винегрет (100 г), салат из
+                                                моркови с яблоком (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Капуста<br>по-грузински (100 г)</p>
+                                                <p class="mobile-hidden">Винегрет (100 г)</p>
+                                                <p class="mobile-hidden">Салат из моркови<br>с яблоком (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с омлетом (250
+                                                г), щи из свежей капусты (250
+                                                г), крем- суп тыквенный с зеленью, семечками и пшеничной гренкой (250
+                                                г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с омлетом (250 г)</p>
+                                                <p class="mobile-hidden">Щи из свежей капусты (250 г)</p>
+                                                <p class="mobile-hidden">Крем-суп тыквенный с зеленью, семечками<br>и
+                                                    пшеничной гренкой (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> биточки мясные в сливочном
+                                                соусе (100/30 г), жаркое со
+                                                свининой (200 г), рулет мясной (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Биточки мясные<br>в сливочном соусе (100/30 г)
+                                                </p>
+                                                <p class="mobile-hidden">Жаркое со свининой (200 г)</p>
+                                                <p class="mobile-hidden">Рулет мясной (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис с овощами (180 г).
+                                            </p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Среда</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> морковь по-корейски (100 г),
+                                                карпаччо из свеклы с сыром
+                                                фета (100 г), салат Рубин с имбирной заправкой (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Морковь<br>по-корейски (100 г)</p>
+                                                <p class="mobile-hidden">Карпаччо из свеклы с сыром фета (100 г)</p>
+                                                <p class="mobile-hidden">Салат Рубин<br>с имбирной заправкой (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с яичной лапшой
+                                                (250 г), рассольник
+                                                по-Ленинградски (250 г), борщ классический (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с яичной лапшой (250 г)</p>
+                                                <p class="mobile-hidden">Рассольник<br>по-Ленинградски (250 г)</p>
+                                                <p class="mobile-hidden">Борщ классический (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> зраза куриная с начинкой из
+                                                сливочного сыра и зелени
+                                                (100 г), капуста жаренная со охотничьими колбасками (200 г), оладья
+                                                печеночные (130 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Зраза куриная<br>с начинкой<br>из сливочного
+                                                    сыра и зелени (100 г)</p>
+                                                <p class="mobile-hidden">Капуста жаренная<br>с охотничьими колбасками
+                                                    (200 г)</p>
+                                                <p class="mobile-hidden">Оладьи<br>печеночные (130 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180
+                                                г), макароны (180 г), рис (180
+                                                г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Четверг</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Крабовый (100 г), салат
+                                                Коул слоу (100 г), свекла с
+                                                маринованным огурцом (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Крабовый (100 г)</p>
+                                                <p class="mobile-hidden">Салат Коул слоу<br>(100 г)</p>
+                                                <p class="mobile-hidden">Свекла<br>с маринованным огурцом (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с гренками (250
+                                                г), суп овощной с курицей
+                                                (250 г), суп рыбный сливочный (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с гренками (250 г)</p>
+                                                <p class="mobile-hidden">Суп овощной<br>с курицей (250 г)</p>
+                                                <p class="mobile-hidden">Суп рыбный сливочный (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> котлета рыбная (100 г),
+                                                спагетти с курой и грибами в
+                                                сливочном соусе (200 г), митболы жаренные в томатном соусе (100/20 г).
+                                            </p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Котлета рыбная<br>(100 г)</p>
+                                                <p class="mobile-hidden">Спагетти с курой<br>и грибами<br>в
+                                                    сливочном<br>соусе (200 г)</p>
+                                                <p class="mobile-hidden">Митболы жаренные в томатном соусе (100/20 г)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Пятница</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Витаминный с яблоком
+                                                (100 г), салат Лесной с
+                                                грибами и картофелем (100 г), морковь с сыром (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Витаминный<br>с яблоком (100 г)</p>
+                                                <p class="mobile-hidden">Салат Лесной<br>с грибами<br>и картофелем (100
+                                                    г)</p>
+                                                <p class="mobile-hidden">Морковь с сыром (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с вермишелью
+                                                (250 г), картофельный суп-пюре
+                                                с курицей (250 г), солянка по-домашнему (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с вермишелью<br>(250 г)</p>
+                                                <p class="mobile-hidden">Картофельный суп-пюре с курицей<br>(250 г)</p>
+                                                <p class="mobile-hidden">Солянка<br>по-домашнему<br>(250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> котлета Полтавская (100 г),
+                                                голубцы (200 г), торт
+                                                печеночный (120 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Котлета Полтавская (100 г)</p>
+                                                <p class="mobile-hidden">Голубцы (200 г)</p>
+                                                <p class="mobile-hidden">Торт печеночный (120 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
+                            </div>
+                        </div>
+                        <div class="vl-menu__lunch ">
                             <img class="mobile-hidden vl-shadow" src="./img/vl-menu/classic-lunch.png"
-                                srcset="./img/vl-menu/classic-lunch@2x.png 2x" alt="classic-lunch" width="340" height="344">
+                                srcset="./img/vl-menu/classic-lunch@2x.png 2x" alt="classic-lunch" width="340"
+                                height="344" data-img="2">
                             <img class="desktop-hidden vl-shadow" src="./img/vl-menu/mob-classic-lunch.png"
-                                srcset="./img/vl-menu/mob-classic-lunch@2x.png 2x" alt="classic-lunch" width="280" height="180">
-                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn">Классический обед<img
-                                    src="./img/vl-menu/arrow-down.svg" alt="arrow down"></button>
+                                srcset="./img/vl-menu/mob-classic-lunch@2x.png 2x" alt="classic-lunch" width="280"
+                                height="180" data-img="2">
+                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn" data-role="2"
+                                type="button">Классический обед<img class="menu-btn-arrow"
+                                    src="./img/vl-menu/arrow-down.svg" alt="arrow"></button>
+                        </div>
+                        <div class="vl-menu__mob-content desktop-none">
+                            <div class="vl-menu__list-wrapper mobile-hidden" data-content="2">
+                                <div class="vl-menu__list">
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Понедельник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Оливье (100 г), Сельдь по-русски
+                                                (100 г), Салат Питер с ветчиной (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Оливье<br>(100 г)</p>
+                                                <p class="mobile-hidden">Сельдь по-русски (100 г)</p>
+                                                <p class="mobile-hidden">Салат Питер с ветчиной (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с клецками (250
+                                                г), суп грибной с курицей
+                                                (250 г), суп харчо (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с клецками (250 г)</p>
+                                                <p class="mobile-hidden">Суп грибной<br>с курицей (250 г)</p>
+                                                <p class="mobile-hidden">Суп харчо (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> чахохбили (130/20 г),
+                                                шницель куриный по-министерски (100 г), свинина в кисло-сладком соусе (120 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Чахохбили (130/20 г)</p>
+                                                <p class="mobile-hidden">Шницель куриный по-министерски (100 г)</p>
+                                                <p class="mobile-hidden">Свинина в кисло-сладком соусе (120 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г), Картофель отварной с зеленью (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                                <p class="mobile-hidden">картофель отварной с зеленью (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Вторник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> капуста по-грузински (100 г),
+                                                салат итальянский (100 г), салат из буженины по-венгерски (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Капуста<br>по-грузински (100 г)</p>
+                                                <p class="mobile-hidden">Салат итальянский (100 г)</p>
+                                                <p class="mobile-hidden">Салат из буженины по-венгерски (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с омлетом (250
+                                                г), щи из свежей капусты (250
+                                                г), крем- суп тыквенный с зеленью, семечками и пшеничной гренкой (250
+                                                г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с омлетом (250 г)</p>
+                                                <p class="mobile-hidden">Щи из свежей капусты (250 г)</p>
+                                                <p class="mobile-hidden">Крем-суп тыквенный с зеленью, семечками<br>и
+                                                    пшеничной гренкой (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> свинина запечённая с овощами (100 г), фрикасе куриное с грибами (120 г), окорочок куриный запечённый (130 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Свинина запечённая с овощами (100 г)</p>
+                                                <p class="mobile-hidden">Фрикасе куриное с грибами (120 г)</p>
+                                                <p class="mobile-hidden">Окорочок куриный запечённый (130 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис с овощами (180 г), пюре картофельное(180 г).
+                                            </p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Пюре картофельное (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Среда</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> карпаччо из свеклы с сыром фета (100 г), салат Столичный (100 г), салат Мимоза (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Карпаччо из свеклы с сыром фета (100 г)</p>
+                                                <p class="mobile-hidden">Салат Столичный (100 г)</p>
+                                                <p class="mobile-hidden">Салат Мимоза (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с яичной лапшой
+                                                (250 г), рассольник
+                                                по-Ленинградски (250 г), борщ классический (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с яичной лапшой (250 г)</p>
+                                                <p class="mobile-hidden">Рассольник<br>по-Ленинградски (250 г)</p>
+                                                <p class="mobile-hidden">Борщ классический (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> лазанья мясная (200 г), куриное филе запеченное с томатами (100 г), свинина в тесте (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Лазанья мясная (200 г)</p>
+                                                <p class="mobile-hidden">Куриное филе запеченное с томатами (100 г)</p>
+                                                <p class="mobile-hidden">Свинина в тесте (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180
+                                                г), макароны (180 г), рис (180
+                                                г), картофель отварной с зеленью (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                                <p class="mobile-hidden">Картофель отварной с зеленью (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Четверг</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Крабовый (100 г), сельдь под шубой (100 г), салат "Емеля" с копченой курицей (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Крабовый (100 г)</p>
+                                                <p class="mobile-hidden">Сельдь под шубой (100 г)</p>
+                                                <p class="mobile-hidden">Салат "Емеля" с копченой курицей (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с гренками (250
+                                                г), суп овощной с курицей
+                                                (250 г), суп рыбный сливочный (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с гренками (250 г)</p>
+                                                <p class="mobile-hidden">Суп овощной<br>с курицей (250 г)</p>
+                                                <p class="mobile-hidden">Суп рыбный сливочный (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> шницель из свинины(100), курица с овощами в соусе терияки (100 г), рыба жаренная (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Шницель из свинины(100 г)</p>
+                                                <p class="mobile-hidden">Курица с овощами в соусе терияки (100 г)</p>
+                                                <p class="mobile-hidden">Рыба жаренная (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г), пюре картофельное (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                                <p class="mobile-hidden">Пюре картофельное (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Пятница</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат Лесной с грибами и картофелем (100 г), салат Мясной (100г), салат Французский с курицей и сыром (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат Лесной с грибами и картофелем (100 г)</p>
+                                                <p class="mobile-hidden">Салат Мясной (100г)</p>
+                                                <p class="mobile-hidden">Салат Французский с курицей и сыром (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> бульон куриный с вермишелью
+                                                (250 г), картофельный суп-пюре
+                                                с курицей (250 г), солянка по-домашнему (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Бульон куриный<br>с вермишелью<br>(250 г)</p>
+                                                <p class="mobile-hidden">Картофельный суп-пюре с курицей<br>(250 г)</p>
+                                                <p class="mobile-hidden">Солянка<br>по-домашнему<br>(250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> запеканка картофельная с мясом (250 г), свинина запеченная по охотничьи (100 г), окорок куриный в сметано-чесночном соусе (130 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Запеканка картофельная с мясом (250 г)</p>
+                                                <p class="mobile-hidden">Свинина запеченная по охотничьи (100 г)</p>
+                                                <p class="mobile-hidden">Окорок куриный в сметано-чесночном соусе (130 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г), картофель отварной с зеленью (180 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p>
+                                                <p class="mobile-hidden">Картофель отварной с зеленью (180 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
+                            </div>
                         </div>
                         <div class="vl-menu__lunch">
                             <img class="mobile-hidden vl-shadow" src="./img/vl-menu/vegan-lunch.png"
-                                srcset="./img/vl-menu/vegan-lunch@2x.png 2x" alt="vegan-lunch" width="340" height="344">
-                            <img class="desktop-hidden vl-shadow" src="./img/vl-menu/mob-vegan-lunch.png" srcset="./img/vl-menu/mob-vegan-lunch@2x.png 2x"
-                                alt="vegan-lunch" width="280" height="180">
-                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn">Вегетарианский обед<img
-                                    src="./img/vl-menu/arrow-down.svg" alt="arrow down"></button>
+                                srcset="./img/vl-menu/vegan-lunch@2x.png 2x" alt="vegan-lunch" width="340" height="344"
+                                data-img="3">
+                            <img class="desktop-hidden vl-shadow" src="./img/vl-menu/mob-vegan-lunch.png"
+                                srcset="./img/vl-menu/mob-vegan-lunch@2x.png 2x" alt="vegan-lunch" width="280"
+                                height="180" data-img="3">
+                            <button class="vl-btn vl-delivery__bottom-btn vl-menu-btn" data-role="3"
+                                type="button">Вегетарианский обед<img class="menu-btn-arrow"
+                                    src="./img/vl-menu/arrow-down.svg" alt="arrow"></button>
+                        </div>
+                        <div class="vl-menu__mob-content desktop-none">
+                            <div class="vl-menu__list-wrapper mobile-hidden" data-content="3">
+                                <div class="vl-menu__list">
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Понедельник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> винегрет со спаржей (120 г), ламинария с дайконом и пряной заправкой (120 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Винегрет со спаржей (120 г)</p>
+                                                <p class="mobile-hidden">Ламинария с дайконом и пряной заправкой (120 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> щи постные с фасолью (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Щи постные с фасолью (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> биточки чечевичные с соусом из корений (140/40 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Биточки чечевичные с соусом из корений (140/40 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> капуста жаренная (150 г), картофельное пюре со шпинатом (постное) (150 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Капуста жаренная (150 г)</p>
+                                                <p class="mobile-hidden">Картофельное пюре со шпинатом (постное) (150 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Вторник</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> карпаччо из свеклы с рукколой в зелени (120 г), салат Лесной с шампиньонами заправленный постным майонезом (120 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Карпаччо из свеклы с рукколой в зелени (120 г)</p>
+                                                <p class="mobile-hidden">Салат Лесной с шампиньонами заправленный постным майонезом (120 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> солянка грибная (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Солянка грибная (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> шаверма с фалафелем (260 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Шаверма с фалафелем (260 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <!-- <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис с овощами (180 г).
+                                            </p> -->
+                                            <div class="vl-menu__name">
+                                                <!-- <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Среда</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат из маргеланской редьки с медово-горчичной заправкой (100 г), рулеты из баклажанов с тофу (80 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат из маргеланской редьки с медово-горчичной заправкой (100 г)</p>
+                                                <p class="mobile-hidden">Рулеты из баклажанов с тофу (80 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> суп чечевичный с помидорами (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Суп чечевичный с помидорами (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> удон с овощами по тайски (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Удон с овощами по тайски (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <!-- <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180
+                                                г), макароны (180 г), рис (180
+                                                г).</p> -->
+                                            <div class="vl-menu__name">
+                                                <!-- <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Четверг</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат "Оливье овощной" с постным майонезом (120 г), салат из брокколи с помидорами и кукурузой под соевым дрессингом (120 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат "Оливье овощной" с постным майонезом (120 г)</p>
+                                                <p class="mobile-hidden">Салат из брокколи с помидорами и кукурузой под соевым дрессингом (120 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> суп-пюре из тыквы постный (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Суп-пюре из тыквы постный (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> фрикадельки овощные Кофта в томатном соусе (140/40 г).
+                                            </p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Фрикадельки овощные Кофта в томатном соусе (140/40 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <p class="desktop-hidden"><span>Гарнир:</span> морковь печеная в терияки (150 г), полента с тыквой (150 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Морковь печеная в терияки (150 г)</p>
+                                                <p class="mobile-hidden">Полента с тыквой (150 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__weekday">
+                                        <p class="vl-menu__dayname">Пятница</p>
+                                        <div class="vl-menu__dishtype vl-menu__salads">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                            <p class="desktop-hidden"><span>Салаты:</span> салат фасолевый с грибами (100 г), капуста ким-чи (100 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Салат фасолевый с грибами (100 г)</p>
+                                                <p class="mobile-hidden">Капуста ким-чи (100 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                            <p class="desktop-hidden"><span>Супы:</span> суп щавелевый (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Суп щавелевый (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                            <p class="desktop-hidden"><span>Горячее:</span> ньокки с песто (250 г).</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Ньокки с песто (250 г)</p>
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__side">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                            <!-- <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                                г), рис (180 г).</p> -->
+                                            <div class="vl-menu__name">
+                                                <!-- <p class="mobile-hidden">Гречка (180 г)</p>
+                                                <p class="mobile-hidden">Макароны (180 г)</p>
+                                                <p class="mobile-hidden">Рис (180 г)</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="vl-menu__dishtype vl-menu__other">
+                                            <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                            <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                            <div class="vl-menu__name">
+                                                <p class="mobile-hidden">Компот/Чай</p>
+                                                <p class="mobile-hidden">Хлеб</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="vl-menu__list-wrapper">
-                        <div class="vl-menu__list">
-                            <div class="vl-menu__weekday">
-                                <p class="vl-menu__dayname">Понедельник</p>
-                                <div class="vl-menu__dishtype vl-menu__salads">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
-                                    <p class="desktop-hidden"><span>Салаты:</span> салат Оливье (100 г), салат Витаминный (100 г), свекла печеная с грецким орехом (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Салат Оливье<br>(100 г)</p>
-                                        <p class="mobile-hidden">Салат Витаминный (100 г)</p>
-                                        <p class="mobile-hidden">Свекла печеная<br>с грецким орехом (100 г)</p>
+                    <div class="mobile-none">
+                        <div class="vl-menu__list-wrapper vl-active mobile-hidden" data-content="1">
+                            <div class="vl-menu__list">
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Понедельник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Оливье (100 г), салат
+                                            Витаминный (100 г), свекла печеная с грецким орехом (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Оливье<br>(100 г)</p>
+                                            <p class="mobile-hidden">Салат Витаминный (100 г)</p>
+                                            <p class="mobile-hidden">Свекла печеная<br>с грецким орехом (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с клецками (250 г),
+                                            суп грибной с курицей (250 г), суп харчо (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с клецками (250 г)</p>
+                                            <p class="mobile-hidden">Суп грибной<br>с курицей (250 г)</p>
+                                            <p class="mobile-hidden">Суп харчо (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> котлета куриная (100 г), плов из
+                                            свинины (200 г), стейк из говяжьей печени с луком (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Котлета куриная (100 г)</p>
+                                            <p class="mobile-hidden">Плов из свинины (200 г)</p>
+                                            <p class="mobile-hidden">Стейк из говяжьей печени с луком<br>(100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="vl-menu__dishtype vl-menu__soups">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
-                                    <p class="desktop-hidden"><span>Супы:</span> бульон куриный с клецками (250 г), суп грибной с курицей (250 г), суп харчо (250 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Бульон куриный<br>с клецками (250 г)</p>
-                                        <p class="mobile-hidden">Суп грибной<br>с курицей (250 г)</p>
-                                        <p class="mobile-hidden">Суп харчо (250 г)</p>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Вторник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> капуста по-грузински (100 г),
+                                            винегрет (100 г), салат из моркови с яблоком (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Капуста<br>по-грузински (100 г)</p>
+                                            <p class="mobile-hidden">Винегрет (100 г)</p>
+                                            <p class="mobile-hidden">Салат из моркови<br>с яблоком (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с омлетом (250 г),
+                                            щи из свежей капусты (250 г), крем- суп тыквенный с зеленью, семечками и
+                                            пшеничной гренкой (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с омлетом (250 г)</p>
+                                            <p class="mobile-hidden">Щи из свежей капусты (250 г)</p>
+                                            <p class="mobile-hidden">Крем-суп тыквенный с зеленью, семечками<br>и
+                                                пшеничной гренкой (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> биточки мясные в сливочном соусе
+                                            (100/30 г), жаркое со свининой (200 г), рулет мясной (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Биточки мясные<br>в сливочном соусе (100/30 г)</p>
+                                            <p class="mobile-hidden">Жаркое со свининой (200 г)</p>
+                                            <p class="mobile-hidden">Рулет мясной (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис с овощами (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="vl-menu__dishtype vl-menu__hot">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
-                                    <p class="desktop-hidden"><span>Горячее:</span> котлета куриная (100 г), плов из свинины (200 г), стейк из говяжьей печени с луком (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Котлета куриная (100 г)</p>
-                                        <p class="mobile-hidden">Плов из свинины (200 г)</p>
-                                        <p class="mobile-hidden">Стейк из говяжьей печени с луком<br>(100 г)</p>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Среда</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> морковь по-корейски (100 г),
+                                            карпаччо из свеклы с сыром фета (100 г), салат Рубин с имбирной заправкой
+                                            (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Морковь<br>по-корейски (100 г)</p>
+                                            <p class="mobile-hidden">Карпаччо из свеклы с сыром фета (100 г)</p>
+                                            <p class="mobile-hidden">Салат Рубин<br>с имбирной заправкой (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с яичной лапшой (250
+                                            г), рассольник по-Ленинградски (250 г), борщ классический (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с яичной лапшой (250 г)</p>
+                                            <p class="mobile-hidden">Рассольник<br>по-Ленинградски (250 г)</p>
+                                            <p class="mobile-hidden">Борщ классический (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> зраза куриная с начинкой из
+                                            сливочного сыра и зелени (100 г), капуста жаренная со охотничьими колбасками
+                                            (200 г), оладья печеночные (130 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Зраза куриная<br>с начинкой<br>из сливочного сыра и
+                                                зелени (100 г)</p>
+                                            <p class="mobile-hidden">Капуста жаренная<br>с охотничьими колбасками (200
+                                                г)</p>
+                                            <p class="mobile-hidden">Оладьи<br>печеночные (130 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180 г),
+                                            макароны (180 г), рис (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="vl-menu__dishtype vl-menu__side">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
-                                    <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г), рис (180 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Гречка (180 г)</p>
-                                        <p class="mobile-hidden">Макароны (180 г)</p>
-                                        <p class="mobile-hidden">Рис (180 г)</p>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Четверг</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Крабовый (100 г), салат
+                                            Коул слоу (100 г), свекла с маринованным огурцом (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Крабовый (100 г)</p>
+                                            <p class="mobile-hidden">Салат Коул слоу<br>(100 г)</p>
+                                            <p class="mobile-hidden">Свекла<br>с маринованным огурцом (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с гренками (250 г),
+                                            суп овощной с курицей (250 г), суп рыбный сливочный (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с гренками (250 г)</p>
+                                            <p class="mobile-hidden">Суп овощной<br>с курицей (250 г)</p>
+                                            <p class="mobile-hidden">Суп рыбный сливочный (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> котлета рыбная (100 г), спагетти
+                                            с курой и грибами в сливочном соусе (200 г), митболы жаренные в томатном
+                                            соусе (100/20 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Котлета рыбная<br>(100 г)</p>
+                                            <p class="mobile-hidden">Спагетти с курой<br>и грибами<br>в
+                                                сливочном<br>соусе (200 г)</p>
+                                            <p class="mobile-hidden">Митболы жаренные в томатном соусе (100/20 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="vl-menu__dishtype vl-menu__other">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
-                                    <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Компот/Чай</p>
-                                        <p class="mobile-hidden">Хлеб</p>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Пятница</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Витаминный с яблоком (100
+                                            г), салат Лесной с грибами и картофелем (100 г), морковь с сыром (100 г).
+                                        </p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Витаминный<br>с яблоком (100 г)</p>
+                                            <p class="mobile-hidden">Салат Лесной<br>с грибами<br>и картофелем (100 г)
+                                            </p>
+                                            <p class="mobile-hidden">Морковь с сыром (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с вермишелью (250
+                                            г), картофельный суп-пюре с курицей (250 г), солянка по-домашнему (250 г).
+                                        </p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с вермишелью<br>(250 г)</p>
+                                            <p class="mobile-hidden">Картофельный суп-пюре с курицей<br>(250 г)</p>
+                                            <p class="mobile-hidden">Солянка<br>по-домашнему<br>(250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> котлета Полтавская (100 г),
+                                            голубцы (200 г), торт печеночный (120 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Котлета Полтавская (100 г)</p>
+                                            <p class="mobile-hidden">Голубцы (200 г)</p>
+                                            <p class="mobile-hidden">Торт печеночный (120 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="vl-menu__weekday">
-                                <p class="vl-menu__dayname">Вторник</p>
-                                <div class="vl-menu__dishtype vl-menu__salads">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
-                                    <p class="desktop-hidden"><span>Салаты:</span> капуста по-грузински (100 г), винегрет (100 г), салат из моркови с яблоком (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Капуста<br>по-грузински (100 г)</p>
-                                        <p class="mobile-hidden">Винегрет (100 г)</p>
-                                        <p class="mobile-hidden">Салат из моркови<br>с яблоком (100 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__soups">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
-                                    <p class="desktop-hidden"><span>Супы:</span> бульон куриный с омлетом (250 г), щи из свежей капусты (250 г), крем- суп тыквенный с зеленью, семечками и пшеничной гренкой (250 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Бульон куриный<br>с омлетом (250 г)</p>
-                                        <p class="mobile-hidden">Щи из свежей капусты (250 г)</p>
-                                        <p class="mobile-hidden">Крем-суп тыквенный с зеленью, семечками<br>и пшеничной гренкой (250 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__hot">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
-                                    <p class="desktop-hidden"><span>Горячее:</span> биточки мясные в сливочном соусе (100/30 г), жаркое со свининой (200 г), рулет мясной (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Биточки мясные<br>в сливочном соусе (100/30 г)</p>
-                                        <p class="mobile-hidden">Жаркое со свининой (200 г)</p>
-                                        <p class="mobile-hidden">Рулет мясной (100 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__side">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
-                                    <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г), рис с овощами (180 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Гречка (180 г)</p>
-                                        <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
-                                        <p class="mobile-hidden">Макароны (180 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__other">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
-                                    <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Компот/Чай</p>
-                                        <p class="mobile-hidden">Хлеб</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vl-menu__weekday">
-                                <p class="vl-menu__dayname">Среда</p>
-                                <div class="vl-menu__dishtype vl-menu__salads">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
-                                    <p class="desktop-hidden"><span>Салаты:</span> морковь по-корейски (100 г), карпаччо из свеклы с сыром фета (100 г), салат Рубин с имбирной заправкой (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Морковь<br>по-корейски (100 г)</p>
-                                        <p class="mobile-hidden">Карпаччо из свеклы с сыром фета (100 г)</p>
-                                        <p class="mobile-hidden">Салат Рубин<br>с имбирной заправкой (100 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__soups">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
-                                    <p class="desktop-hidden"><span>Супы:</span> бульон куриный с яичной лапшой (250 г), рассольник по-Ленинградски (250 г), борщ классический (250 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Бульон куриный<br>с яичной лапшой (250 г)</p>
-                                        <p class="mobile-hidden">Рассольник<br>по-Ленинградски (250 г)</p>
-                                        <p class="mobile-hidden">Борщ классический (250 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__hot">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
-                                    <p class="desktop-hidden"><span>Горячее:</span> зраза куриная с начинкой из сливочного сыра и зелени (100 г), капуста жаренная со охотничьими колбасками (200 г), оладья печеночные (130 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Зраза куриная<br>с начинкой<br>из сливочного сыра и зелени (100 г)</p>
-                                        <p class="mobile-hidden">Капуста жаренная<br>с охотничьими колбасками (200 г)</p>
-                                        <p class="mobile-hidden">Оладьи<br>печеночные (130 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__side">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
-                                    <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180 г), макароны (180 г), рис (180 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
-                                        <p class="mobile-hidden">Макароны (180 г)</p>
-                                        <p class="mobile-hidden">Рис (180 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__other">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
-                                    <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Компот/Чай</p>
-                                        <p class="mobile-hidden">Хлеб</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vl-menu__weekday">
-                                <p class="vl-menu__dayname">Четверг</p>
-                                <div class="vl-menu__dishtype vl-menu__salads">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
-                                    <p class="desktop-hidden"><span>Салаты:</span> салат Крабовый (100 г), салат Коул слоу (100 г), свекла с маринованным огурцом (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Салат Крабовый (100 г)</p>
-                                        <p class="mobile-hidden">Салат Коул слоу<br>(100 г)</p>
-                                        <p class="mobile-hidden">Свекла<br>с маринованным огурцом (100 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__soups">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
-                                    <p class="desktop-hidden"><span>Супы:</span> бульон куриный с гренками (250 г), суп овощной с курицей (250 г), суп рыбный сливочный (250 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Бульон куриный<br>с гренками (250 г)</p>
-                                        <p class="mobile-hidden">Суп овощной<br>с курицей (250 г)</p>
-                                        <p class="mobile-hidden">Суп рыбный сливочный (250 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__hot">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
-                                    <p class="desktop-hidden"><span>Горячее:</span> котлета рыбная (100 г), спагетти с курой и грибами в сливочном соусе (200 г), митболы жаренные в томатном соусе (100/20 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Котлета рыбная<br>(100 г)</p>
-                                        <p class="mobile-hidden">Спагетти с курой<br>и грибами<br>в сливочном<br>соусе (200 г)</p>
-                                        <p class="mobile-hidden">Митболы жаренные в томатном соусе (100/20 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__side">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
-                                    <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г), рис (180 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Гречка (180 г)</p>
-                                        <p class="mobile-hidden">Макароны (180 г)</p>
-                                        <p class="mobile-hidden">Рис (180 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__other">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
-                                    <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Компот/Чай</p>
-                                        <p class="mobile-hidden">Хлеб</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vl-menu__weekday">
-                                <p class="vl-menu__dayname">Пятница</p>
-                                <div class="vl-menu__dishtype vl-menu__salads">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
-                                    <p class="desktop-hidden"><span>Салаты:</span> салат Витаминный с яблоком (100 г), салат Лесной с грибами и картофелем (100 г), морковь с сыром (100 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Салат Витаминный<br>с яблоком (100 г)</p>
-                                        <p class="mobile-hidden">Салат Лесной<br>с грибами<br>и картофелем (100 г)</p>
-                                        <p class="mobile-hidden">Морковь с сыром (100 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__soups">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
-                                    <p class="desktop-hidden"><span>Супы:</span> бульон куриный с вермишелью (250 г), картофельный суп-пюре с курицей (250 г), солянка по-домашнему (250 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Бульон куриный<br>с вермишелью<br>(250 г)</p>
-                                        <p class="mobile-hidden">Картофельный суп-пюре с курицей<br>(250 г)</p>
-                                        <p class="mobile-hidden">Солянка<br>по-домашнему<br>(250 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__hot">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
-                                    <p class="desktop-hidden"><span>Горячее:</span> котлета Полтавская (100 г), голубцы (200 г), торт печеночный (120 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Котлета Полтавская (100 г)</p>
-                                        <p class="mobile-hidden">Голубцы (200 г)</p>
-                                        <p class="mobile-hidden">Торт печеночный (120 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__side">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
-                                    <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г), рис (180 г).</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Гречка (180 г)</p>
-                                        <p class="mobile-hidden">Макароны (180 г)</p>
-                                        <p class="mobile-hidden">Рис (180 г)</p>
-                                    </div>
-                                </div>
-                                <div class="vl-menu__dishtype vl-menu__other">
-                                    <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
-                                    <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
-                                    <div class="vl-menu__name">
-                                        <p class="mobile-hidden">Компот/Чай</p>
-                                        <p class="mobile-hidden">Хлеб</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
                         </div>
-                        <button class="vl-btn vl-menu__list-btn">СКРЫТЬ</button>
+                        <div class="vl-menu__list-wrapper mobile-hidden" data-content="2">
+                            <div class="vl-menu__list">
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Понедельник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Оливье (100 г), Сельдь по-русски
+                                        (100 г), Салат Питер с ветчиной (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Оливье<br>(100 г)</p>
+                                            <p class="mobile-hidden">Сельдь по-русски (100 г)</p>
+                                            <p class="mobile-hidden">Салат Питер с ветчиной (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с клецками (250
+                                        г), суп грибной с курицей
+                                        (250 г), суп харчо (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с клецками (250 г)</p>
+                                            <p class="mobile-hidden">Суп грибной<br>с курицей (250 г)</p>
+                                            <p class="mobile-hidden">Суп харчо (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> чахохбили (130/20 г),
+                                        шницель куриный по-министерски (100 г), свинина в кисло-сладком соусе (120 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Чахохбили (130/20 г)</p>
+                                            <p class="mobile-hidden">Шницель куриный по-министерски (100 г)</p>
+                                            <p class="mobile-hidden">Свинина в кисло-сладком соусе (120 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                        г), рис (180 г), Картофель отварной с зеленью (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                            <p class="mobile-hidden">картофель отварной с зеленью (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Вторник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> капуста по-грузински (100 г),
+                                        салат итальянский (100 г), салат из буженины по-венгерски (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Капуста<br>по-грузински (100 г)</p>
+                                            <p class="mobile-hidden">Салат итальянский (100 г)</p>
+                                            <p class="mobile-hidden">Салат из буженины по-венгерски (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с омлетом (250 г),
+                                            щи из свежей капусты (250
+                                            г), крем- суп тыквенный с зеленью, семечками и пшеничной гренкой (250 г).
+                                        </p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с омлетом (250 г)</p>
+                                            <p class="mobile-hidden">Щи из свежей капусты (250 г)</p>
+                                            <p class="mobile-hidden">Крем-суп тыквенный с зеленью, семечками<br>и
+                                                пшеничной гренкой (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> свинина запечённая с овощами (100 г), фрикасе куриное с грибами (120 г), окорочок куриный запечённый (130 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Свинина запечённая с овощами (100 г)</p>
+                                            <p class="mobile-hidden">Фрикасе куриное с грибами (120 г)</p>
+                                            <p class="mobile-hidden">Окорочок куриный запечённый (130 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                        г), рис с овощами (180 г), пюре картофельное(180 г).
+                                        </p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Пюре картофельное (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Среда</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> карпаччо из свеклы с сыром фета (100 г), салат Столичный (100 г), салат Мимоза (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Карпаччо из свеклы с сыром фета (100 г)</p>
+                                            <p class="mobile-hidden">Салат Столичный (100 г)</p>
+                                            <p class="mobile-hidden">Салат Мимоза (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с яичной лапшой (250
+                                            г), рассольник
+                                            по-Ленинградски (250 г), борщ классический (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с яичной лапшой (250 г)</p>
+                                            <p class="mobile-hidden">Рассольник<br>по-Ленинградски (250 г)</p>
+                                            <p class="mobile-hidden">Борщ классический (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> лазанья мясная (200 г), куриное филе запеченное с томатами (100 г), свинина в тесте (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Лазанья мясная (200г)</p>
+                                            <p class="mobile-hidden">Куриное филе запеченное с томатами (100г)</p>
+                                            <p class="mobile-hidden">Свинина в тесте (100г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180 г), макароны (180 г), рис (180 г), картофель отварной с зеленью (180г)</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                            <p class="mobile-hidden">Картофель отварной с зеленью (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Четверг</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Крабовый (100 г), сельдь под шубой (100 г), салат "Емеля" с копченой курицей (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Крабовый (100 г)</p>
+                                            <p class="mobile-hidden">Сельдь под шубой (100 г)</p>
+                                            <p class="mobile-hidden">Салат "Емеля" с копченой курицей (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с гренками (250 г),
+                                            суп овощной с курицей
+                                            (250 г), суп рыбный сливочный (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с гренками (250 г)</p>
+                                            <p class="mobile-hidden">Суп овощной<br>с курицей (250 г)</p>
+                                            <p class="mobile-hidden">Суп рыбный сливочный (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> шницель из свинины(100), курица с овощами в соусе терияки (100 г), рыба жаренная (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Шницель из свинины(100 г)</p>
+                                            <p class="mobile-hidden">Курица с овощами в соусе терияки (100 г)</p>
+                                            <p class="mobile-hidden">Рыба жаренная (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                        г), рис (180 г), пюре картофельное (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                            <p class="mobile-hidden">Пюре картофельное (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Пятница</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат Лесной с грибами и картофелем (100 г), салат Мясной (100г), салат Французский с курицей и сыром (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат Лесной с грибами и картофелем (100 г)</p>
+                                            <p class="mobile-hidden">Салат Мясной (100г)</p>
+                                            <p class="mobile-hidden">Салат Французский с курицей и сыром (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> бульон куриный с вермишелью (250
+                                            г), картофельный суп-пюре
+                                            с курицей (250 г), солянка по-домашнему (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Бульон куриный<br>с вермишелью<br>(250 г)</p>
+                                            <p class="mobile-hidden">Картофельный суп-пюре с курицей<br>(250 г)</p>
+                                            <p class="mobile-hidden">Солянка<br>по-домашнему<br>(250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> запеканка картофельная с мясом (250 г), свинина запеченная по охотничьи (100 г), окорок куриный в сметано-чесночном
+                                        соусе (130 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Запеканка картофельная с мясом (250 г)</p>
+                                            <p class="mobile-hidden">Свинина запеченная по охотничьи (100 г)</p>
+                                            <p class="mobile-hidden">Окорок куриный в сметано-чесночном соусе (130 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side vl-menu__side-2">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180
+                                        г), рис (180 г), картофель отварной с зеленью (180 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p>
+                                            <p class="mobile-hidden">Картофель отварной с зеленью (180 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
+                        </div>
+                        <div class="vl-menu__list-wrapper mobile-hidden" data-content="3">
+                            <div class="vl-menu__list">
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Понедельник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> винегрет со спаржей (120 г), ламинария с дайконом и пряной заправкой (120 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Винегрет со спаржей (120 г)</p>
+                                            <p class="mobile-hidden">Ламинария с дайконом и пряной заправкой (120 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> щи постные с фасолью (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Щи постные с фасолью (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> биточки чечевичные с соусом из корений (140/40 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Биточки чечевичные с соусом из корений (140/40 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> капуста жаренная (150 г), картофельное пюре со шпинатом (постное) (150 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Капуста жаренная (150 г)</p>
+                                            <p class="mobile-hidden">Картофельное пюре со шпинатом (постное) (150 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Вторник</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> карпаччо из свеклы с рукколой в зелени (120 г), салат Лесной с шампиньонами заправленный постным майонезом (120 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Карпаччо из свеклы с рукколой в зелени (120 г)</p>
+                                            <p class="mobile-hidden">Салат Лесной с шампиньонами заправленный постным майонезом (120 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> солянка грибная (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Солянка грибная (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> шаверма с фалафелем (260 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Шаверма с фалафелем (260 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <!-- <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис с овощами (180 г).
+                                        </p> -->
+                                        <div class="vl-menu__name">
+                                            <!-- <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Рис с овощами<br>(180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Среда</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат из маргеланской редьки с медово-горчичной заправкой (100 г), рулеты из баклажанов с тофу (80 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат из маргеланской редьки с медово-горчичной заправкой (100 г)</p>
+                                            <p class="mobile-hidden">Рулеты из баклажанов с тофу (80 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> суп чечевичный с помидорами (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Суп чечевичный с помидорами (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> удон с овощами по тайски (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Удон с овощами по тайски (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <!-- <p class="desktop-hidden"><span>Гарнир:</span> греча с жареным луком (180 г),
+                                            макароны (180 г), рис (180
+                                            г).</p> -->
+                                        <div class="vl-menu__name">
+                                            <!-- <p class="mobile-hidden">Греча с жареным луком (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Четверг</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат "Оливье овощной" с постным майонезом (120 г), салат из брокколи с помидорами и кукурузой под соевым дрессингом (120 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат "Оливье овощной" с постным майонезом (120 г)</p>
+                                            <p class="mobile-hidden">Салат из брокколи с помидорами и кукурузой под соевым дрессингом (120 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> суп-пюре из тыквы постный (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Суп-пюре из тыквы постный (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> фрикадельки овощные Кофта в томатном соусе (140/40 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Фрикадельки овощные Кофта в томатном соусе (140/40 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <p class="desktop-hidden"><span>Гарнир:</span> морковь печеная в терияки (150 г), полента с тыквой (150 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Морковь печеная в терияки (150 г)</p>
+                                            <p class="mobile-hidden">Полента с тыквой (150 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vl-menu__weekday">
+                                    <p class="vl-menu__dayname">Пятница</p>
+                                    <div class="vl-menu__dishtype vl-menu__salads">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Салаты:</p>
+                                        <p class="desktop-hidden"><span>Салаты:</span> салат фасолевый с грибами (100 г), капуста ким-чи (100 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Салат фасолевый с грибами (100 г)</p>
+                                            <p class="mobile-hidden">Капуста ким-чи (100 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__soups vl-menu__soups-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Супы:</p>
+                                        <p class="desktop-hidden"><span>Супы:</span> суп щавелевый (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Суп щавелевый (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__hot vl-menu__hot-3">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Горячее:</p>
+                                        <p class="desktop-hidden"><span>Горячее:</span> ньокки с песто (250 г).</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Ньокки с песто (250 г)</p>
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__side">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Гарнир:</p>
+                                        <!-- <p class="desktop-hidden"><span>Гарнир:</span> гречка (180 г), макароны (180 г),
+                                            рис (180 г).</p> -->
+                                        <div class="vl-menu__name">
+                                            <!-- <p class="mobile-hidden">Гречка (180 г)</p>
+                                            <p class="mobile-hidden">Макароны (180 г)</p>
+                                            <p class="mobile-hidden">Рис (180 г)</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="vl-menu__dishtype vl-menu__other">
+                                        <p class="vl-menu__dishtype-title mobile-hidden">Прочее:</p>
+                                        <p class="desktop-hidden"><span>Прочее:</span> компот/чай, хлеб.</p>
+                                        <div class="vl-menu__name">
+                                            <p class="mobile-hidden">Компот/Чай</p>
+                                            <p class="mobile-hidden">Хлеб</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="vl-btn vl-menu__list-btn" type="button">СКРЫТЬ</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -627,47 +1945,30 @@
             </div>
         </section>
 
-        <section class="vl-trust">
-            <div class="vl-container">
-                <div class="vl-trust__wrapper">
-                    <h2 class="vl-trust__title">Нам доверяют</h2>
-                    <div class="vl-trust__content">
-                        <div class="vl-trust__card">
-                            <div class="vl-trust__card-top">
-                                <img class="vl-trust__card-img" src="./img/vl-trust/trust-icon.svg" alt="trust-icon"
-                                    width="64" height="64">
-                                <div class="vl-trust__card-title">
-                                    <p class="vl-trust__card-position">Руководитель отдела ООО «ПФК»</p>
-                                    <p class="vl-trust__card-name">Мария Никитина</p>
-                                </div>
-                            </div>
-                            <div class="vl-trust__card-content">
-                                <p class="vl-trust__card-text">Выражаем благодарность за достойный уровень организации
-                                    услуг корпоративного питания для сотрудников нашей компании.
-                                    Высоко ценим ваш профессионализм Ваших сотрудников и их добросовестное отношение к
-                                    работе.</p>
-                                <p class="vl-trust__card-bottom">БЛАГОДАРСТВЕННОЕ ПИСЬМО</p>
-                            </div>
+        <section class="al-carousel-tr al-section">
+            <div class="al-carousel-wrapper-tr">
+
+                <div class="vl-container">
+
+                    <h2 class="al-carousel-title-tr">Нам доверяют</h2>
+                    <div class="trust-carousel owl-carousel owl-theme">
+                        <div class="item-tr">
+                            <img src="./img/vl-trust/trade-img.png" srcset="./img/vl-trust/trade-img@2x.png 2x"
+                                alt="trade-img">
+                        </div>
+                        <div class="item-tr">
+                            <img src="./img/vl-trust/auto-img.png" srcset="./img/vl-trust/auto-img@2x.png 2x"
+                                alt="auto-img">
+                        </div>
+                        <div class="item-tr">
+                            <img src="./img/vl-trust/zarya-img.png" srcset="./img/vl-trust/zarya-img@2x.png 2x"
+                                alt="auto-img">
+                        </div>
+                        <div class="item-tr">
+                            <img src="./img/vl-trust/lengi-img.png" srcset="./img/vl-trust/lengi-img@2x.png 2x"
+                                alt="auto-img">
                         </div>
 
-                        <div class="vl-trust__card">
-                            <div class="vl-trust__card-top">
-                                <img class="vl-trust__card-img" src="./img/vl-trust/trust-icon.svg" alt="trust-icon"
-                                    width="64" height="64">
-                                <div class="vl-trust__card-title">
-                                    <p class="vl-trust__card-position">Руководитель отдела ООО «ПФК»</p>
-                                    <p class="vl-trust__card-name">Мария Никитина</p>
-                                </div>
-                            </div>
-                            <div class="vl-trust__card-content">
-                                <p class="vl-trust__card-text">Выражаем благодарность за достойный уровень организации
-                                    услуг корпоративного питания
-                                    для сотрудников нашей компании.
-                                    Высоко ценим ваш профессионализм Ваших сотрудников и их добросовестное отношение к
-                                    работе.</p>
-                                <p class="vl-trust__card-bottom">БЛАГОДАРСТВЕННОЕ ПИСЬМО</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -682,7 +1983,8 @@
                             <div class="al-acc-item">
                                 <div class="al-column">
                                     <div class="al-acc-item-wrapper">
-                                        <h3 class="al-acc-first-title">Что входит в услугу корпоративного питания для сотрудников?</h3>
+                                        <h3 class="al-acc-first-title">Что входит в услугу корпоративного питания для
+                                            сотрудников?</h3>
                                     </div>
                                     <p class="al-acc-text none">Корпоративное питание включает комплекс мероприятий,
                                         направленных на
@@ -698,9 +2000,10 @@
                                         – аутсорсинг питания; – доставка питания (завтрак, обед, ужин).
                                     </p>
                                 </div>
-                
+
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="al-acc-item">
@@ -723,9 +2026,10 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
-                            </div>           
+                            </div>
                             <div class="al-acc-item">
                                 <div class="al-column">
                                     <div class="al-acc-item-wrapper">
@@ -746,7 +2050,8 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="al-acc-item">
@@ -769,7 +2074,8 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="al-acc-item">
@@ -792,7 +2098,8 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="al-acc-item">
@@ -815,7 +2122,8 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="al-acc-item">
@@ -838,12 +2146,15 @@
                                     </p>
                                 </div>
                                 <div class="al-acc-plus">
-                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg" alt="plus-cross-icon">
+                                    <img class="al-acc-plus-img" src="./img/FAQ/plus-cross-icon.svg"
+                                        alt="plus-cross-icon">
                                 </div>
                             </div>
                             <div class="vl-acc__bottom">
-                                <p class="vl-acc__bottom-text"><span class="vl-question">Остались вопросы?</span> Оставьте заявку на сайте или позвоните по номеру: <u>984-40-64</u>, и мы с
-                                    радостью Вас проконсультируем!</p>  
+                                <p class="vl-acc__bottom-text"><span class="vl-question">Остались вопросы?</span>
+                                    Оставьте заявку на сайте или позвоните по номеру: <a
+                                        href="tel:984-40-64">984-40-64</a>, и мы с
+                                    радостью Вас проконсультируем!</p>
                             </div>
                         </div>
                     </div>
@@ -859,33 +2170,36 @@
                         <div class="vl-events__card">
                             <img class="vl-events__card-img mobile-hidden" src="./img/vl-events/ussr-img.png"
                                 srcset="./img/vl-events/ussr-img@2x.png 2x" alt="Mir-trud-mai" width="300" height="291">
-                            <img class="vl-events__card-img desktop-hidden" src="./img/vl-events/mob-ussr-img.png" srcset="./img/vl-events/mob-ussr-img@2x.png 2x" alt="Mir-trud-mai" width="260" height="238">
+                            <img class="vl-events__card-img desktop-hidden" src="./img/vl-events/mob-ussr-img.png"
+                                srcset="./img/vl-events/mob-ussr-img@2x.png 2x" alt="Mir-trud-mai" width="260"
+                                height="238">
                             <h3 class="vl-events__card-title">30 АПРЕЛЯ ОТМЕЧАЕМ ДЕНЬ СССР!</h3>
                             <p class="vl-events__card-text">Сеть "Русские Традиции" приглашает вас отметить День СССР!
                                 Мы решили создать особенную атмосферу, наполненную ностальгией и добрыми воспоминаниями
                                 о временах, которые оставили свой след в истории нашей страны. Окунитесь в атмосферу
                                 праздника вместе с нами!</p>
-                            <button class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</button>
+                            <a href="#!" class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</a>
                         </div>
                         <div class="vl-events__card">
                             <img class="vl-events__card-img mobile-hidden" src="./img/vl-events/pelmeni-img.png"
                                 srcset="./img/vl-events/pelmeni-img@2x.png 2x" alt="Pelmeni" width="300" height="291">
                             <img class="vl-events__card-img desktop-hidden" src="./img/vl-events/mob-pelmeni-img.png"
-                            srcset="./img/vl-events/mob-pelmeni-img@2x.png 2x" alt="Pelmeni" width="260" height="238">
+                                srcset="./img/vl-events/mob-pelmeni-img@2x.png 2x" alt="Pelmeni" width="260"
+                                height="238">
                             <h3 class="vl-events__card-title">Внимание всем любителям вкусной еды</h3>
                             <p class="vl-events__card-text">Теперь в нашей сети вы можете приобрести настоящие пельмени
                                 ручной лепки по фирменным рецептам в замороженном виде!</p>
-                            <button class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</button>
+                            <a href="#!" class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</a>
                         </div>
                         <div class="vl-events__card">
                             <img class="vl-events__card-img mobile-hidden" src="./img/vl-events/grill-img.png"
                                 srcset="./img/vl-events/grill-img@2x.png 2x" alt="Grill" width="300" height="291">
                             <img class="vl-events__card-img desktop-hidden" src="./img/vl-events/mob-grill-img.png"
-                            srcset="./img/vl-events/mob-grill-img@2x.png 2x" alt="Grill" width="260" height="238">
+                                srcset="./img/vl-events/mob-grill-img@2x.png 2x" alt="Grill" width="260" height="238">
                             <h3 class="vl-events__card-title">Гриль–Пати</h3>
                             <p class="vl-events__card-text">24 апреля во всех заведениях сети «Русские Традиции»
                                 стартует вкуснейший день - ГРИЛЬ-ПАТИ!</p>
-                            <button class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</button>
+                            <a href="#!" class="vl-events__card-btn vl-btn">УЗНАТЬ ПОДРОБНОСТИ</a>
                         </div>
                     </div>
                 </div>
@@ -893,15 +2207,57 @@
         </section>
 
         <section class="vl-form">
-            <div class="container">
-                <div class="vl-form__wrapper">
-                    
+            <div class="vl-container">
+                <div class="al-section al-form-menu">
+                    <div class="al-form-wrapper">
+                        <form action="#" class="al-form">
+                            <h2>Заявка на организацию питания</h2>
+
+                            <div class="al-input">
+                                <div class="select-wrapper">
+                                    <select class="select" name="type">
+                                        <option value="1">Какой тип организации питания?</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select class="select" name="amount">
+                                        <option value="1">Количество человек</option>
+                                    </select>
+                                </div>
+
+                                <input type="text" placeholder="Ваше имя" name="name">
+                                <input type="tel" placeholder="Номер телефона" name="number">
+                                <input type="email" placeholder="E-mail" name="email">
+                                <input type="text" placeholder="Адрес вашей компании (не обязательно)" name="address">
+                                <button class="vl-btn vl-form__btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                            </div>
+
+                            <p class="al-text-agree">Отправляя заявку, я даю согласие на<a href="#!"
+                                    class="al-red--block">обработку
+                                    персональных данных </a></p>
+                        </form>
+                    </div>
+                    <div class="al-pdf">
+                        <a href="#" class="al-circle" download><span class="vl-form__span">Скачать</span><span
+                                class="vl-form__span">меню</span><span>.pdf</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vl-bottom">
+            <div class="vl-container">
+                <div class="vl-bottom__wrapper">
+                    <h2 class="vl-bottom-title">Наши объекты</h2>
+                    <a href="#!" class="vl-bottom__link">Смотреть полностью</a>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <script src="./js/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/owl.carousel.min.js" defer></script>
     <script src="./js/main.js" defer></script>
 </body>
 

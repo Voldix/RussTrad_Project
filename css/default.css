@@ -379,13 +379,13 @@ div.required .control-label:before {
     transform: translateY(-50%);
 }
 
-.owl-carousel .owl-nav button.owl-next {
+/* .owl-carousel .owl-nav button.owl-next {
     right: 15px;
     -moz-transform: rotate(180deg) translateY(50%);
     -webkit-transform: rotate(180deg) translateY(50%);
     -ms-transform: rotate(180deg) translateY(50%);
     transform: rotate(180deg) translateY(50%);
-}
+} */
 
 /* Gradent to all drop down menus */
 .dropdown-menu li>a:hover {

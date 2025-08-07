@@ -35,6 +35,15 @@
     font-display: swap;
 }
 
+body {
+    background-image: url(../img/vl-bg-img/bg-img.svg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -44,8 +53,25 @@ h6 {
     font-family: "Avenir Next Cyr", sans-serif;
 }
 
+input::placeholder,
+option,
+select {
+    font-size: inherit;
+    font-family: "Avenir Next Cyr", sans-serif;
+}
+
+input,
+select {
+    outline: none;
+    cursor: pointer;
+}
+
 .desktop-hidden {
     display: none;
+}
+
+.vl-active {
+    display: flex !important;
 }
 
 /* Контейнер */
@@ -124,6 +150,8 @@ h6 {
 
     border-radius: 10px;
     height: 53px;
+
+    text-decoration: none;
 }
 
 .vl-promo__right,
@@ -266,6 +294,10 @@ h4.vl-delivery__middle-suggestion {
 }
 
 /* Секция Меню */
+.desktop-none {
+    display: none;
+}
+
 .vl-menu {
     padding-bottom: 130px;
 }
@@ -290,7 +322,6 @@ h4.vl-delivery__middle-suggestion {
 }
 
 .vl-menu p {
-    /* margin-top: 16px; */
     margin: 0;
     margin-bottom: 0;
     font-size: 20px;
@@ -314,7 +345,6 @@ h4.vl-delivery__middle-suggestion {
 .vl-menu__lunch .vl-menu-btn {
     position: absolute;
     left: 50%;
-    /* bottom: 5.5%; */
     bottom: 0;
     transform: translateX(-50%);
 }
@@ -330,7 +360,7 @@ h4.vl-delivery__middle-suggestion {
 }
 
 .vl-menu__list-wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     row-gap: 60px;
     align-items: center;
@@ -379,8 +409,20 @@ h4.vl-delivery__middle-suggestion {
     height: 290px;
 }
 
+.vl-menu__soups-3 {
+    height: 80px;
+}
+
+.vl-menu__hot-3 {
+    height: 130px;
+}
+
 .vl-menu__side {
     height: 160px;
+}
+
+.vl-menu__side-2 {
+    height: 230px;
 }
 
 .vl-menu__dishtype .vl-menu__dishtype-title {
@@ -406,6 +448,12 @@ h4.vl-delivery__middle-suggestion {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .vl-rules {
+        background-image: url("../img/vl-rules/rules-bg@2x.png");
+    }
 }
 
 .vl-rules__wrapper {
@@ -452,6 +500,10 @@ h4.vl-delivery__middle-suggestion {
 .vl-rules__text {
     font-size: 20px;
     line-height: 1.3;
+}
+
+.btn-active .menu-btn-arrow {
+    transform: rotate(180deg);
 }
 
 .vl-rules__btn-wrapper {
@@ -603,90 +655,74 @@ h4.vl-delivery__middle-suggestion {
 }
 
 /* Секция "Нам доверяют" */
-.vl-trust {
-    padding: 50px 0;
+
+.al-carousel-wrapper-tr .owl-carousel .owl-nav button.owl-prev,
+.al-carousel-wrapper-tr .owl-carousel .owl-nav button.owl-next {
+    opacity: 1;
+    background: none;
+    box-shadow: none;
+}
+
+.al-carousel-wrapper-tr {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
     background-color: #f9f9f9;
 }
 
-.vl-trust p,
-.vl-trust h2 {
-    margin: 0;
+.al-carousel-title-tr {
+    margin: 50px 0 61px 0;
 }
 
-h2.vl-trust__title {
-    margin-bottom: 40px;
+.trust-carousel {
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 56px;
 }
 
-.vl-trust__title {
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 1;
+.trust-carousel .owl-nav button img {
+    width: 12px;
+    height: 22px;
 }
 
-.vl-trust__content {
-    display: flex;
-    column-gap: 20px;
-}
-
-.vl-trust__card {
-    padding-top: 17px;
-    padding-left: 20px;
-    padding-right: 17px;
-    padding-bottom: 27px;
-
-    border-radius: 10px;
-    background-color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 22px;
-}
-
-.vl-trust__card-top {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-}
-
-.vl-trust__card-img {
+.item-tr img {
     border-radius: 10px;
     border: 1px solid #f8eee1;
 }
 
-.vl-trust__card-title {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
+.trust-carousel .owl-nav {
+    display: block !important;
+    margin-top: 56px;
 }
 
-.vl-trust__card-position {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.3;
+.trust-carousel .owl-prev {
+    left: -40px !important;
 }
 
-.vl-trust__card-name {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
+.trust-carousel .owl-next {
+    right: -40px !important;
 }
 
-.vl-trust__card-content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 36px;
+.al-carousel-wrapper-tr .owl-theme .owl-nav [class*="owl-"] {
+    background: none !important;
 }
 
-.vl-trust__card-text {
-    font-size: 20px;
-    line-height: 1.3;
+.trust-carousel .owl-nav button img {
+    width: 12px;
+    height: 22px;
 }
 
-.vl-trust__card-bottom {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 1;
-    color: #be1622;
+.trust-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.trust-carousel {
+    max-width: 986px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Секция FAQ */
@@ -716,7 +752,7 @@ h2.vl-trust__title {
     line-height: 1.3;
 
     max-height: 0;
-    transition: all 0.4s ease-in;
+    transition: all 0.1s ease-in;
     overflow: hidden;
 }
 
@@ -757,7 +793,7 @@ h3.al-acc-first-title {
 .al-acc-plus-img {
     width: 40px;
     height: 40px;
-    transition: transform 0.4s ease-in;
+    transition: transform 0.1s ease-in;
 }
 
 .vl-acc__bottom {
@@ -767,6 +803,11 @@ h3.al-acc-first-title {
     max-width: 741px;
     border-radius: 10px;
 }
+
+.vl-acc__bottom a {
+    color: #1a0f0f;
+}
+
 .vl-acc__bottom-text {
     margin: 0;
     font-weight: 600;
@@ -838,6 +879,196 @@ h2.vl-events__title {
 }
 
 /* Ceкция формы братной связи */
+.vl-form {
+    padding-bottom: 118px;
+}
+
+.vl-form p {
+    margin: 0;
+}
+
+.al-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.al-form h2 {
+    margin-bottom: 0;
+}
+
+.al-form-menu {
+    display: flex;
+    column-gap: 34px;
+}
+
+.al-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 520px;
+    height: 595px;
+    background-image: url(../img/vl-form/form-img.png);
+    border-radius: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .al-pdf {
+        background-image: url("../img/vl-form/form-img@2x.png");
+    }
+}
+
+input,
+select {
+    background-color: #f5f5f5;
+    color: #00000066;
+    width: 449px;
+    height: 48px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: #00000066;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 21px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 19px;
+    height: 8px;
+    background-image: url(../img/vl-form/select_icon.png);
+    pointer-events: none;
+}
+
+.al-input {
+    max-width: 449px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.al-form-btn:hover {
+    background-color: #be1621d1;
+}
+
+.al-red--block {
+    color: #be1622;
+    display: block;
+    text-decoration: none;
+}
+
+.al-red--inline {
+    color: #be1622;
+}
+
+.al-text-agree {
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+.al-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 336px;
+    height: 336px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #be1622;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.al-circle:hover {
+    background-color: #f6f6f6;
+}
+
+.al-circle span:first-child {
+    margin-top: 25px;
+}
+
+.al-circle span:not(:last-child) {
+    font-size: 56px;
+    line-height: 1;
+}
+
+.al-circle {
+    text-decoration: none;
+}
+
+.al-pdf .vl-form__span {
+    font-weight: 600;
+}
+
+.al-circle span:last-child {
+    margin-top: 6px;
+    font-size: 30.27px;
+    line-height: 130%;
+    color: #000;
+}
+
+/* Секция низ страницы */
+.vl-bottom {
+    padding: 40px 0;
+    background-image: url(../img/vl-bottom/bottom-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .vl-bottom {
+        background-image: url(../img/vl-bottom/bottom-img@2x.png);
+    }
+}
+
+.vl-bottom__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vl-bottom__wrapper h2 {
+    margin: 0;
+}
+
+.vl-bottom-title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1;
+    color: #fff;
+}
+
+.vl-bottom__link {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #f8eee1;
+}
 
 /* Резиновая верстка до моб версии */
 @media (max-width: 1199px) {
@@ -1016,14 +1247,25 @@ h2.vl-events__title {
     .vl-menu__salads {
         height: calc(238 / 12 * 1vw);
     }
-    
+
     .vl-menu__soups,
     .vl-menu__hot {
         height: calc(290 / 12 * 1vw);
     }
-    
+
     .vl-menu__side {
         height: calc(160 / 12 * 1vw);
+    }
+
+    .vl-menu__soups-3 {
+        height: calc(80 / 12 * 1vw) !important;
+    }
+    
+    .vl-menu__hot-3 {
+        height: calc(130 / 12 * 1vw) !important;
+    }
+    .vl-menu__side-2 {
+        height: calc(230 / 12 * 1vw) !important;
     }
 
     /* Секция "Правила доставки" */
@@ -1071,21 +1313,21 @@ h2.vl-events__title {
     .vl-timetable__title {
         font-size: calc(42 / 12 * 1vw);
     }
-    
+
     .vl-timetable__content {
         gap: calc(20 / 12 * 1vw);
     }
-    
+
     .vl-timetable__weekday {
         padding: calc(26 / 12 * 1vw);
         border-radius: calc(10 / 12 * 1vw);
         column-gap: calc(40 / 12 * 1vw);
     }
-    
+
     .vl-timetable__day {
         font-size: calc(24 / 12 * 1vw);
     }
-    
+
     .vl-timetable__time {
         font-size: calc(24 / 12 * 1vw);
     }
@@ -1279,15 +1521,89 @@ h2.vl-events__title {
         width: calc(300 / 12 * 1vw);
         height: calc(291 / 12 * 1vw);
     }
+
+    /* Ceкция формы братной связи */
+    .vl-form {
+        padding-bottom: calc(118 / 12 * 1vw);
+    }
+
+    .al-form {
+        row-gap: calc(30 / 12 * 1vw);
+    }
+
+    .al-form-menu {
+        column-gap: calc(34 / 12 * 1vw);
+    }
+
+    .al-pdf {
+        width: calc(520 / 12 * 1vw);
+        height: calc(595 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+    }
+
+    input,
+    select {
+        width: calc(449 / 12 * 1vw);
+        height: calc(48 / 12 * 1vw);
+        padding-left: calc(20 / 12 * 1vw);
+        font-size: calc(18 / 12 * 1vw);
+        border-radius: calc(10 / 12 * 1vw);
+    }
+
+    .al-input {
+        max-width: calc(449 / 12 * 1vw);
+        gap: calc(10 / 12 * 1vw);
+    }
+
+    .al-text-agree {
+        font-size: calc(20 / 12 * 1vw);
+    }
+
+    .al-circle {
+        width: calc(336 / 12 * 1vw);
+        height: calc(336 / 12 * 1vw);
+    }
+
+    .al-circle span:first-child {
+        margin-top: calc(25 / 12 * 1vw);
+    }
+
+    .al-circle span:not(:last-child) {
+        font-size: calc(56 / 12 * 1vw);
+    }
+
+    .al-circle span:last-child {
+        margin-top: calc(6 / 12 * 1vw);
+        font-size: calc(30.27 / 12 * 1vw);
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea {
+        height: calc(47 / 12 * 1vw);
+        padding: calc(10 / 12 * 1vw) calc(15 / 12 * 1vw);
+        font-size: calc(18 / 12 * 1vw);
+    }
 }
 
 /* Мобильная версия */
 @media (max-width: 767px) {
+    .mobile-none {
+        display: none !important;
+    }
+
+    .desktop-none {
+        display: block;
+    }
+
     /* Контейнер */
     .vl-container {
         margin: 0 auto;
         padding: 0 20px;
-        width: min(320px, 100%)
+        width: 100%;
+        max-width: 580px;
     }
 
     .mobile-hidden {
@@ -1482,13 +1798,20 @@ h2.vl-events__title {
     .vl-menu__choice {
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 10px;
         max-height: unset;
     }
 
     .vl-menu__lunch img {
         border-radius: 6px;
+        width: 100%;
+        height: auto;
     }
+
+    img.menu-btn-arrow {
+        width: 16px;
+        height: 16px;
+    } 
 
     .vl-menu__lunch .vl-menu-btn {
         position: absolute;
@@ -1570,6 +1893,12 @@ h2.vl-events__title {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .vl-rules {
+            background-image: url("../img/vl-rules/rules-bg@2x.png");
+        }
     }
 
     .vl-rules__wrapper {
@@ -1683,7 +2012,7 @@ h2.vl-events__title {
     .al-tl-num {
         width: 49px;
     }
-    
+
     .al-tl-num::after {
         width: 3px;
     }
@@ -1714,59 +2043,20 @@ h2.vl-events__title {
     }
 
     /* Секция "Нам доверяют" */
-    .vl-trust {
-        padding: 30px 0;
+    .al-carousel-title-tr {
+        margin: 30px 0;
     }
 
-    h2.vl-trust__title {
+    .trust-carousel .owl-nav {
+        display: none !important;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        margin-bottom: 15px;
+    }
+
+    .trust-carousel .owl-dots {
         margin-bottom: 30px;
-    }
-
-    .vl-trust__title {
-        font-size: 28px;
-    }
-
-    .vl-trust__content {
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .vl-trust__card {
-        padding: 22px 10px;
-        border-radius: 6;
-        row-gap: 10px;
-    }
-
-    .vl-trust__card-img {
-        border-radius: 6px;
-        width: 76px;
-        height: 76px;
-    }
-
-    .vl-trust__card-title {
-        row-gap: 9px;
-    }
-
-    .vl-trust__card-position {
-        font-size: 10px;
-    }
-
-    .vl-trust__card-name {
-        font-size: 18px;
-        line-height: 1;
-    }
-
-    .vl-trust__card-content {
-        row-gap: 20px;
-    }
-
-    .vl-trust__card-text {
-        font-size: 12px;
-    }
-
-    .vl-trust__card-bottom {
-        text-align: center;
-        font-size: 16px;
     }
 
     /* Секция FAQ */
@@ -1848,6 +2138,8 @@ h2.vl-events__title {
 
     .vl-events__card-img {
         border-radius: 6px;
+        width: 100%;
+        height: auto;
     }
 
     .vl-events__card-title {
@@ -1864,5 +2156,94 @@ h2.vl-events__title {
         padding: 0 18px;
         background-color: #fff;
         color: #be1622;
+    }
+
+    /* Ceкция формы братной связи */
+    .al-form h2 {
+        margin-bottom: 0;
+    }
+
+    .al-form {
+        row-gap: 15px;
+    }
+
+    .al-input {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea {
+        height: 48px;
+        padding: 16px 20px;
+        font-size: 12px;
+        line-height: 1.3;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .al-form-menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .al-text-agree {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .al-pdf {
+        width: 100%;
+        height: 312px;
+        background-image: url(../img/vl-form/mob-form-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .al-pdf {
+            background-image: url("../img/vl-form/mob-form-img@2x.png");
+        }
+    }
+
+    .al-circle span:not(:last-child) {
+        font-size: 35.98px;
+    }
+
+    .al-circle span:last-child {
+        font-size: 19.45px;
+    }
+
+    .al-circle {
+        width: 195px;
+        height: 195px;
+    }
+
+    /* Секция низ страницы */
+    .vl-bottom {
+        padding: 60px 0;
+    }
+
+    .vl-bottom__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .vl-bottom-title {
+        font-size: 28px;
+    }
+
+    .vl-bottom__link {
+        font-size: 16px;
+        line-height: 1.2;
     }
 }
